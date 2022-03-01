@@ -49,6 +49,14 @@ body {
       display: flex;
       justify-content: space-between;
     }
+  
+  .top-slide{
+  width: 100%;
+  }
+
+    .slide{
+      height: 600px;
+    }
 
     
 
