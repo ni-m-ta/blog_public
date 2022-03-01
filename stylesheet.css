@@ -6,3 +6,51 @@ body {
   a {
     text-decoration: none;
   }
+
+  .container{
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  header{
+    width: 100%;
+    height: 150px;
+    color: gray;
+  }
+
+    .header-logo-snsIcons{
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+      .header-logo-img{
+        width: 300px;
+        height: 100px;
+      }
+
+      .header-snsIcons{
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+        .header-snsIcons .fa-brands, .fa-solid{
+          font-size: 30px;
+          padding: 10px 5px;
+        }
+
+    .header-options{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    
+
+  
+
