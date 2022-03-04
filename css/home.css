@@ -45,6 +45,10 @@ body {
         justify-content: flex-end;
         color: rgb(70, 70, 70);
       }
+      
+      .header-snsIcons a:link, .header-snsIcons a:visited, .header-snsIcons a:hover, .header-snsIcons a:active{
+        color: rgb(70, 70, 70);
+      }
 
         .header-snsIcons .fa-brands, .fa-solid{
           font-size: 30px;
@@ -56,7 +60,7 @@ body {
       justify-content: space-between;
     }
 
-      .header-options a:link, a:visited, a:hover, a:active {
+      .header-options a:link, .header-options a:visited, .header-options a:hover, .header-options a:active {
         color: gray;
       }
   
