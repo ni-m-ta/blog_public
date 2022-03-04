@@ -26,6 +26,12 @@ body {
     background-color: white;
   }
 
+  .header-background{
+    position: absolute;
+    height: 130px;
+    width: 100%;
+  }
+
     .header-logo-snsIcons{
       width: 100%;
       height: 100px;
@@ -65,8 +71,9 @@ body {
       }
   
   .top-slide{
-  width: 100%;
-  }
+    width: 100%;
+    height: 600px;
+   }
 
     .slide{
       height: 600px;
@@ -118,6 +125,10 @@ footer{
 
       .footer-option{
         padding: 0 5px;
+      }
+
+      .footer-option:link, .footer-option:visited, .footer-option:hover, .footer-option:active {
+        color: black;
       }
 
     footer p{

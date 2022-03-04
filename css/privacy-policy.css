@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  
+ a{
+   text-decoration: none;
+ }
+
+.container{
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+
+header{
+   width: 100%;
+   height: 130px;
+   color: gray;
+   position: fixed;
+   z-index: 10;
+   left: 0;
+   top: 0;
+   background-color: white;
+ }
+
+   .header-logo-snsIcons{
+     width: 100%;
+     height: 100px;
+     display: flex;
+     justify-content: space-between;
+   }
+
+     .header-logo-img{
+       width: 300px;
+       height: 100px;
+     }
+
+     .header-snsIcons{
+       width: 200px;
+       height: 100px;
+       display: flex;
+       justify-content: flex-end;
+       color: rgb(70, 70, 70);
+     }
+      
+     .header-snsIcons a:link, .header-snsIcons a:visited, .header-snsIcons a:hover, .header-snsIcons a:active{
+       color: rgb(70, 70, 70);
+     }
+
+       .header-snsIcons .fa-brands, .fa-solid{
+         font-size: 30px;
+         padding: 10px 5px;
+       }
+
+   .header-options{
+     display: flex;
+     justify-content: space-between;
+   }
+
+     .header-options a:link, .header-options a:visited, .header-options a:hover, .header-options a:active {
+       color: gray;
+     }
+
+footer{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(70, 70, 70);
+ }
+      
+    .footer-options{
+       padding-top: 10px;
+       border-bottom: solid 1px white;
+       text-align: center;
+      }
+      
+       .footer-option{
+          padding: 0 5px;
+         }
+      
+        footer p{
+          text-align: center;
+         }
