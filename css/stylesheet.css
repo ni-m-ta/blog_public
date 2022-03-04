@@ -58,6 +58,24 @@ body {
       height: 600px;
     }
 
+.profile{
+  height: 250px;
+  width: 100%;
+}
+
+  .profile h2{
+    text-align: center;
+    color: gray;
+  }
+
+  .profile-parent{
+    display: flex;
+  }
+
+    .profile-photo{
+      background-image: url("");
+    }
+
     
 
   
