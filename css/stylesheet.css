@@ -70,10 +70,15 @@ body {
 
   .profile-parent{
     display: flex;
+    gap: 150px;
   }
 
     .profile-photo{
-      background-image: url("");
+      background-image: url("../img/me.PNG");
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      background-position: center center;
     }
 
     
