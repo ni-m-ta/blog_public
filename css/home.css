@@ -43,6 +43,7 @@ body {
         height: 100px;
         display: flex;
         justify-content: flex-end;
+        color: rgb(70, 70, 70);
       }
 
         .header-snsIcons .fa-brands, .fa-solid{
@@ -54,6 +55,10 @@ body {
       display: flex;
       justify-content: space-between;
     }
+
+      .header-options a:link, a:visited, a:hover, a:active {
+        color: gray;
+      }
   
   .top-slide{
   width: 100%;
@@ -86,10 +91,19 @@ body {
       background-position: center center;
     }
 
+    .profile-descripton h3{
+      color: rgb(70, 70, 70);
+    }
+
+    .profile-descripton p{
+      color: gray;
+      padding: 10px 0;
+    }
+
 footer{
   height: 100px;
   width: 100%;
-  background-color: rgb(71, 70, 70);
+  background-color: rgb(70, 70, 70);
 }
 
     .footer-options{
