@@ -96,3 +96,57 @@ footer{
         footer p{
           text-align: center;
          }
+
+.contents{
+  display: grid;
+  grid-template-columns: 70% 20%;
+  grid-template-rows: 200px 200px 200px 200px 200px 200px;
+}
+
+  .ad-top{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: red;
+  }
+
+  .main{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: blue;
+  }
+
+  .child-profile{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: yellow;
+  }
+
+  .ad-side1{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: green;
+  }
+
+  .ad-side2{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: purple;
+  }
+
+  .ad-bottom{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: black;
+  }
