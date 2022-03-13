@@ -8,6 +8,13 @@ body {
     text-decoration: none;
   }
 
+  ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
   .container{
     width: 1170px;
     padding-right: 15px;
@@ -67,12 +74,41 @@ body {
     .header-options{
       display: flex;
       justify-content: space-between;
+      height: 30px;
+      width: 100%;
     }
 
       .header-options a:link, .header-options a:visited, .header-options a:hover, .header-options a:active {
         color: gray;
       }
-  
+
+      .header-option{
+        width: 100px;
+      }
+
+      .header-option-parent{
+        position: relative;
+      }
+
+      .header-dropdown-menu{
+        position: absolute;
+        top: 30px;
+        background-color: rgb(75, 100, 209);
+        width: 100%;
+        margin: auto 0;
+        display: none;
+      }
+          
+      .header-dropdown-menu li{
+        width: 100%;
+      }
+
+      .header-dropdown-menu-option{
+        padding: 5px 0;
+        display: block;
+        color: #fff; 
+      }
+
   .top-slide{
     width: 100%;
     height: 600px;
@@ -137,7 +173,7 @@ footer{
     footer p{
       text-align: center;
     }
-    
+
 
   
 
