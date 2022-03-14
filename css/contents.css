@@ -1,10 +1,18 @@
+body{
+  background-color: rgba(241, 241, 241, 1);
+}
+
+ul{
+  list-style-position: inside;
+}
 
 .title{
     width: 100%;
     height: 50px;
-    background-color: rgba(0, 0, 255, 0.753);
+    background-color: rgb(27, 127, 204, 0.8);
     color: white;
     text-align: center;
+    margin-top: 0;
 }
 
 .contents{
@@ -14,7 +22,6 @@
     column-gap: 3%;
     row-gap: 20px;
     padding-bottom: 50px;
-    background-color: antiquewhite;
   }
   
   
@@ -23,7 +30,8 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: red;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   }
 
   .main{
@@ -31,7 +39,8 @@
     grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 2;
-    background-color: blue;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   }
 
   .child-profile{
@@ -39,7 +48,8 @@
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
-    background-color: yellow;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   }
 
   .ad-side1{
@@ -47,7 +57,8 @@
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
-    background-color: green;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   }
 
   .ad-side2{
@@ -55,7 +66,8 @@
     grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 3;
-    background-color: purple;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   }
 
   .ad-bottom{
@@ -63,5 +75,6 @@
     grid-row-end: 7;
     grid-column-start: 1;
     grid-column-end: 2;
-    background-color: black;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   }
