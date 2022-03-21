@@ -78,3 +78,20 @@ ul{
     background-color: white;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   }
+
+.child-profile-title{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.child-profile-img{
+  height: 200px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.child-profile-name, .child-profile-status{
+  margin: 0;
+  text-align: center;
+}
