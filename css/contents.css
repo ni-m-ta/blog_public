@@ -84,6 +84,46 @@ ul{
   margin: 0 auto;
 }
 
+  .main-container{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 200px 200px 200px 200px;
+    column-gap: 10%;
+    row-gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .blog{
+    text-align: center;
+  }
+
+  .html-base{
+    background-image: url('../img/myBlog_top_programming3.jpg');
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+    .blog-subtitle{
+      margin: 10px 0 0 0;
+      padding: 0 10px;
+      background-color: white;
+      color: rgb(58, 57, 57);
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .blog-title{
+      margin: 15px 0;
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+    }
+
   .child-profile-title{
     border-bottom: 1px solid rgba(128, 128, 128, 0.3);
   }
