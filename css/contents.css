@@ -84,6 +84,24 @@ ul{
   margin: 0 auto;
 }
 
+  .child-profile-title{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  }
+
+  .child-profile-img{
+    height: 200px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .child-profile-name, .child-profile-status{
+    margin: 0;
+    text-align: center;
+  }
+
+/*css for blog maps*/
   .main-container{
     display: grid;
     grid-template-columns: 350px 350px;
@@ -124,19 +142,23 @@ ul{
       text-align: center;
     }
 
-  .child-profile-title{
-    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
-  }
+/*css for the main contents of blogs*/
 
-  .child-profile-img{
-    height: 200px;
-    width: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.main{
+  color: rgb(70, 70, 70);
+}
 
-  .child-profile-name, .child-profile-status{
+  .date{
     margin: 0;
+  }
+
+  .main-img{
+    width: 780px;
     text-align: center;
   }
+
+    .main-img img{
+      width: 700px;
+      height: auto;
+    }
+
