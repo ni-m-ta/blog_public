@@ -9,7 +9,7 @@ ul{
 .title{
     width: 100%;
     height: 50px;
-    background-color: rgb(27, 127, 204, 0.8);
+    background-color: rgba(27, 127, 204, 0.8);
     color: white;
     text-align: center;
     margin-top: 0;
@@ -161,4 +161,83 @@ ul{
       width: 700px;
       height: auto;
     }
+
+  .main-start-explanation{
+    width: 100%;
+    height: 70px;
+    margin: 30px 0 70px 0;
+  }
+
+    .face-icon{
+      height: 70px;
+      width: 70px;
+      float: left;
+    }
+
+      .face-icon img{
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+      }
+
+      .chat{
+        float: left;
+        margin-left: 50px;
+        position:relative;
+        width:550px;
+        height:50px;
+        background:#FFFFFF;
+        padding:20px;
+        text-align:left;
+        border:3px solid #464646;
+        color:#333333;
+        font-size:14px;
+        font-weight:bold;
+        border-radius:7px;
+        -webkit-border-radius:7px;
+        -moz-border-radius:7px;
+    }
+    .chat:after,.chat:before{
+        border: solid transparent;
+        content:'';
+        height:0;
+        width:0;
+        pointer-events:none;
+        position:absolute;
+        right:100%;
+        top:27%;
+    }
+    .chat:after{
+        border-color: rgba(255, 255, 255, 0);
+        border-top-width:10px;
+        border-bottom-width:10px;
+        border-left-width:30px;
+        border-right-width:30px;
+        margin-top: -10px;
+        border-right-color:#FFFFFF;
+    }
+    .chat:before{
+        border-color: rgba(70, 70, 70, 0);
+        border-top-width:13px;
+        border-bottom-width:13px;
+        border-left-width:39px;
+        border-right-width:39px;
+        margin-top: -13px;
+        margin-right: 3px;
+        border-right-color:#464646;
+    }
+
+    .achievements{
+      height: 200px;
+      width: 100%;
+      margin-top: 15px;
+      background-color: rgba(113, 177, 226, 0.3);
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2)
+    }
+
+      .achievements-title{
+        padding: 10px 0;
+      }
+
+        
 
