@@ -1,11 +1,15 @@
 .contents{
     display: grid;
     grid-template-columns: 70% 27%;
-    grid-template-rows: 200px 200px 200px 200px 6000px 200px;
+    grid-template-rows: 200px 200px 250px 250px 5900px 200px;
     column-gap: 3%;
     row-gap: 20px;
     padding-bottom: 50px;
   }
+
+.main{
+  height: 6500px;
+}
 
   .metaTag-description-img{
     width: 100%;
