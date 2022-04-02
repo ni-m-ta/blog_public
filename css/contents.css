@@ -32,6 +32,7 @@ ul{
     grid-row-end: 2;
     background-color: white;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    text-align: center;
   }
 
   .main{
@@ -54,12 +55,17 @@ ul{
 
   .ad-side{
     grid-row-start: 3;
-    grid-row-end: 6;
+    grid-row-end: 7;
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: white;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     text-align: center;
+  }
+
+  .ad-space{
+    text-align: center;
+    width: 100%;
   }
 
   .ad-bottom{
@@ -69,7 +75,13 @@ ul{
     grid-column-end: 2;
     background-color: white;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    text-align: center;
+    justify-content: middle;
   }
+
+    .ad{
+      padding-top: 5px;
+    }
 
 .child-container{
   width: 95%;
@@ -239,7 +251,7 @@ ul{
 
   .index{
     width: 80%;
-    height: 350px;
+    height: 280px;
     margin: 20px auto;
     background-color: rgba(198, 216, 230, 0.3);
     border: 3px solid rgba(198, 216, 230, 0.8);
