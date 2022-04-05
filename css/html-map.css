@@ -1,0 +1,8 @@
+.html-base{
+    background-image: url('../img/myBlog_top_programming3.jpg');
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
