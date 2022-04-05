@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+ <html lang="ja">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSPKVQ1899"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TSPKVQ1899');
+</script>
+   <meta charset="UTF-8">
+   <title>text-align: center;とmargin: auto;の使い分け</title>
+   <meta name="description" content="ここでは初心者向けにCCSの解説を行います。今回はtext-align:center;とmargin:auto;の違いを理解してみましょう!">
+   <meta name="keywords" content="NiTa, nita, にさとたつや, CSS, text-align, margin">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="img/iconForTab.png">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/contents.css">
+   <link rel="stylesheet" href="css/テキストが入ります。テキストが入ります。テキストが入ります.css">
+   <script src="https://kit.fontawesome.com/00f67a9916.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-logo-snsIcons">
+        <a href="index.html"><img class="header-logo-img" src="img/myBlog_header_logo3.png"></a>
+         <div class="header-snsIcons">
+           <a href="https://twitter.com/TATSUYA_NISATO"><i class="fa-brands fa-twitter"></i></a>
+           <a href="https://www.facebook.com/profile.php?id=100049389249541"><i class="fa-brands fa-facebook-f"></i></a>
+           <a href="https://github.com/ni-m-ta"><i class="fa-brands fa-github"></i></a>
+           <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+        <div class="container">
+          <nav>
+            <ul class="header-options">
+                <li class="header-option"><a href="index.html">HOME</a></li>
+                <li class="header-option"><a href="profile.html">Profile</a></li>
+                <li class="header-option header-option-parent">Blog
+                  <ul class="header-dropdown-menu">
+                    <li><a class="header-dropdown-menu-option" href="experiences-map.html">体験談</a></li>
+                    <li><a class="header-dropdown-menu-option" href="html-map.html">HTML</a></li>
+                    <li><a class="header-dropdown-menu-option" href="css-map.html">CSS</a></li>
+                    <li><a class="header-dropdown-menu-option" href="javascript-map.html">JavaScript</a></li>
+                    <li><a class="header-dropdown-menu-option" href="php-map.html">PHP</a></li>
+                    <li><a class="header-dropdown-menu-option" href="it.html">IT</a></li>
+                  </ul>
+                </li>
+                <li class="header-option"><a href="portfolio.html">Portfolio</a></li>
+                <li class="header-option"><a  href="contact-form.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <h1 class="title">HTML Blog</h1>
+    <div class="container">
+      <div class="contents">
+        <aside class="ad-top">
+          <div class="ad ad-top">
+            <div class="child-container">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HH8I9" rel="nofollow">
+              <img border="0" width="728" height="90" alt="" src="https://www28.a8.net/svt/bgt?aid=210418188370&wid=002&eno=01&mid=s00000000018015029000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3H9ZPO+64AFDM+50+2HH8I9" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+46MPLM+CO4+15TP8X" rel="nofollow">
+              <img border="0" width="728" height="90" alt="" src="https://www27.a8.net/svt/bgt?aid=220402191253&wid=002&eno=01&mid=s00000001642007025000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3N7ZF3+46MPLM+CO4+15TP8X" alt="">
+            </div>
+          </div>
+        </aside>
+        <main>
+          <div class="main">
+            <article>
+              <div class="child-container">
+                  <p class="date">テキストが入ります。テキストが入ります。テキストが入ります</p>
+                  <h2 class="main-title">テキストが入ります。テキストが入ります。テキストが入ります</h2>
+                  <div class="main-img"><img src="img\myBlog_html_base.jpg"></div>
+                  <div class="main-start-explanation">
+                    <div class="face-icon">
+                      <img src="img/me2.PNG">
+                    </div>
+                    <div class="chat">テキストが入ります。テキストが入ります。テキストが入ります
+                    </div>
+                  </div>
+                  <div class="achievements">
+                    <div class="child-container">
+                      <p class="achievements-title">この記事からわかること・できるようになること</p>
+                      <ul>
+                        <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
+                        <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
+                        <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
+                        <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
+                      </ul> 
+                    </div>
+                  </div>
+                  <div class="index">
+                    <p class="index-title">目次</p>
+                    <div class="index-container">
+                      <ol>
+                        <li class="index-subcontent">テキストが入ります。テキストが入ります。テキストが入ります</li>
+                        <li class="index-subcontent">テキストが入ります。テキストが入ります。テキストが入ります</li>
+                          <ul>
+                            <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
+                            <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
+                            <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
+                            <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
+                          </ul>
+                          <li class="index-subcontent">まとめ</li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="subcontents">
+                    <section>
+                      <h2 class="subcontents-title">まとめ</h2>
+                      <p>テキストが入ります。テキストが入ります。テキストが入ります
+                      </p>
+                    </section>
+                    <div class="ad-space">
+                      <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HH8I9" rel="nofollow">
+                      <img border="0" width="728" height="90" alt="" src="https://www28.a8.net/svt/bgt?aid=210418188370&wid=002&eno=01&mid=s00000000018015029000&mc=1"></a>
+                      <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3H9ZPO+64AFDM+50+2HH8I9" alt="">
+                      <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+46MPLM+CO4+15TP8X" rel="nofollow">
+                      <img border="0" width="728" height="90" alt="" src="https://www27.a8.net/svt/bgt?aid=220402191253&wid=002&eno=01&mid=s00000001642007025000&mc=1"></a>
+                      <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3N7ZF3+46MPLM+CO4+15TP8X" alt="">
+                    </div>
+                  </div>
+              </div>
+          </article>
+          </div>
+        </main>
+        <div class="side child-profile">
+          <div class="child-container">
+            <h4 class="child-profile-title">Profile</h4>
+            <img class="child-profile-img" src="img\me2.PNG">
+            <h4 class="child-profile-name">NiTa</h4>
+            <p class="child-profile-status">大学生</p>
+            <p class="child-profile-status">Webクリエイター</p>
+            <ul>
+              <li>文系大学生</li>
+              <li>24卒</li>
+              <li>カリフォルニア留学予定</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="ad-side">
+          <div class="child-container ad-side">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HVT75" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=210418188370&wid=002&eno=01&mid=s00000000018015097000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=3H9ZPO+64AFDM+50+2HVT75" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64VUZE+1WP2+6D4GH" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www27.a8.net/svt/bgt?aid=210418188371&wid=002&eno=01&mid=s00000008903001069000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3H9ZPO+64VUZE+1WP2+6D4GH" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4T96L6+3GOM+68EPD" rel="nofollow">
+            <img border="0" width="250" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191291&wid=002&eno=01&mid=s00000016159001047000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3N7ZF3+4T96L6+3GOM+68EPD" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4T96L6+3GOM+6B70H" rel="nofollow">
+            <img border="0" width="250" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=220402191291&wid=002&eno=01&mid=s00000016159001060000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=3N7ZF3+4T96L6+3GOM+6B70H" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4QVG62+3GWO+6F1WH" rel="nofollow">
+            <img border="0" width="250" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191287&wid=002&eno=01&mid=s00000016188001078000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3N7ZF3+4QVG62+3GWO+6F1WH" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HJ5Y9" rel="nofollow">
+            <img border="0" width="234" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=210418188370&wid=002&eno=01&mid=s00000000018015038000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3H9ZPO+64AFDM+50+2HJ5Y9" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4P35CQ+4XLM+5ZMCH" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191284&wid=002&eno=01&mid=s00000023017001006000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3N7ZF3+4P35CQ+4XLM+5ZMCH" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" rel="nofollow">
+            <img border="0" width="250" height="250" alt="" src="https://www29.a8.net/svt/bgt?aid=220402191259&wid=002&eno=01&mid=s00000001642006048000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191209&wid=002&eno=01&mid=s00000003196005012000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6KMIP" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www24.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001104000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6KMIP" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6NETT" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001117000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6NETT" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3YAN4Q+49ZM+601S1" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191239&wid=002&eno=01&mid=s00000019957001008000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N7ZF3+3YAN4Q+49ZM+601S1" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4323YY+50+550G8H" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=220402191247&wid=002&eno=01&mid=s00000000018031075000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3N7ZF3+4323YY+50+550G8H" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+41V8RE+2KAI+NYHDT" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=220402191245&wid=002&eno=01&mid=s00000011961004024000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3N7ZF3+41V8RE+2KAI+NYHDT" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3VBH3U+3T8U+67C4H" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191234&wid=002&eno=01&mid=s00000017787001042000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+3VBH3U+3T8U+67C4H" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6DC69" rel="nofollow">
+            <img border="0" width="234" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001070000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6DC69" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+402XY2+2KAI+TWLPT" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www27.a8.net/svt/bgt?aid=220402191242&wid=002&eno=01&mid=s00000011961005023000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3N7ZF3+402XY2+2KAI+TWLPT" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3XP7IY+4HHW+63WO1" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191238&wid=002&eno=01&mid=s00000020930001026000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3N7ZF3+3XP7IY+4HHW+63WO1" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3ZHICA+2KAI+1BPOF5" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www27.a8.net/svt/bgt?aid=220402191241&wid=002&eno=01&mid=s00000011961008014000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+3ZHICA+2KAI+1BPOF5" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3YW2QI+3S2C+HWPVL" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www24.a8.net/svt/bgt?aid=220402191240&wid=002&eno=01&mid=s00000017634003008000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N7ZF3+3YW2QI+3S2C+HWPVL" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3YAN4Q+49ZM+614CX" rel="nofollow">
+            <img border="0" width="250" height="250" alt="" src="https://www28.a8.net/svt/bgt?aid=220402191239&wid=002&eno=01&mid=s00000019957001013000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3N7ZF3+3YAN4Q+49ZM+614CX" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3WICBE+2990+TU14H" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www29.a8.net/svt/bgt?aid=220402191236&wid=002&eno=01&mid=s00000010530005011000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=3N7ZF3+3WICBE+2990+TU14H" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3VWWPM+4LJQ+5Z6WX" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191235&wid=002&eno=01&mid=s00000021455001004000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3N7ZF3+3VWWPM+4LJQ+5Z6WX" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3VBH3U+3T8U+67C4H" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191234&wid=002&eno=01&mid=s00000017787001042000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+3VBH3U+3T8U+67C4H" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3GFMZE+ONS+TUGK1" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=220402191209&wid=002&eno=01&mid=s00000003196005013000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=3N7ZF3+3GFMZE+ONS+TUGK1" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64VUZE+1WP2+6D4GH" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www24.a8.net/svt/bgt?aid=210418188371&wid=002&eno=01&mid=s00000008903001069000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3H9ZPO+64VUZE+1WP2+6D4GH" alt="">
+          </div>
+        </aside>
+        <aside class="ad-bottom">
+          <div class="ad ad-bottom">
+            <div class="child-container">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4T96L6+3GOM+67Z9T" rel="nofollow">
+              <img border="0" width="728" height="90" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191291&wid=002&eno=01&mid=s00000016159001045000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N7ZF3+4T96L6+3GOM+67Z9T" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6OHEP" rel="nofollow">
+              <img border="0" width="728" height="90" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001122000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6OHEP" alt="">
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-options">
+          <a class="footer-option" href="privacy-policy.html">Privacy Policy</a>
+          <a class="footer-option" href="contact-form.html">Contact Form</a>
+          <a class="footer-option" href="site-map.html">Site Map</a>
+        </div>
+        <p>&COPY; NiTa BLOG</p>
+      </div>
+    </footer>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+ </html>
