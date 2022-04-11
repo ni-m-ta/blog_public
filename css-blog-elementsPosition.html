@@ -98,10 +98,9 @@
                     <div class="index-container">
                       <ol>
                         <li class="index-subcontent">ブロック要素とインライン要素の違い</li>
+                        <li class="index-subcontent">ブロック要素とインライン要素の領域</li>
                         <li class="index-subcontent">text-align:centerとmargin:auto;の違い</li>
                           <ul>
-                            <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
-                            <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
                             <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
                             <li>テキストが入ります。テキストが入ります。テキストが入ります</li>
                           </ul>
@@ -116,9 +115,39 @@
                             <br>なぜならtext-alignとmarginが影響する要素は異なるからです。
                         </p>
                         <p>まずブロック要素とは、見出しや表、章などHTMLファイルの文書を構成するための基本となる要素です。
-                            <br>例としては、&lt;div&gt;や&lt;h1&gt;、&lt;section&gt;があげられます。
+                            <br>例としては、&lt;div&gt;や&lt;p&gt;、&lt;section&gt;があげられます。
                         </p>
-                        <p>一方インライン要素とは、</p>
+                        <p>一方インライン要素とは、ブロック要素内に用いられる要素で、文章の一部として使われます。
+                            <br>例としては、&lt;a&gt;、&lt;span&gt;などがあげられます。
+                        </p>
+                        <p>正しい表記（ブロック要素がインライン要素を内包している）</p>
+                            <p class="codepen" data-height="130" data-default-tab="html" data-slug-hash="MWrXzMP" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/MWrXzMP">
+                                Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                        <p>誤った表記（ブロック要素がインライン要素に内包されている、ただしHTMLのルールが緩いためブラウザ上では正しく表示されるようにみえるが後に不都合が生じる可能性が高い）</p>
+                            <p class="codepen" data-height="130" data-default-tab="html" data-slug-hash="RwxJqXo" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/RwxJqXo">
+                                Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
+                    </section>
+                    <section>
+                        <h2 class="subcontents-title">ブロック要素とインライン要素の領域</h2>
+                        <p>各要素の領域を理解することは、要素の配置の仕方を理解することにつながります。
+                            <br>ではブロック要素とインライン要素の領域の違いについてみていきましょう。
+                        </p>
+                        <p class="codepen" data-height="150" data-default-tab="html,result" data-slug-hash="qBpKLab" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/qBpKLab">
+                            Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                        </p>
+                        <p>上記の表示からわかることは、</p>
+                        <ul>
+                            <li>デフォルトのブロック要素は、横幅を指定しない限り、画面の幅いっぱいに広がること（厳密にいえば、このブロック要素を囲む要素いっぱいの幅に広がる）</li>
+                            <li>デフォルトのインライン要素は、内包する文章など分の幅をとること</li>
+                        </ul>
                     </section>
                     <section>
                         <h2 class="subcontents-title">text-align:centerとmargin:auto;の違い</h2>
