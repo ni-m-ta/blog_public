@@ -157,6 +157,15 @@ ul{
       height: auto;
     }
 
+  .english{
+    margin-top: 3px;
+    float: right;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(27, 127, 204, 0.8);
+    box-shadow: 2px 2px 5px rgba(8, 35, 56, 0.8);
+  }
+
 /*css for conversation*/
 
   .main-start-explanation{
