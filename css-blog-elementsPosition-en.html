@@ -97,32 +97,32 @@
                     <p class="index-title">Index</p>
                     <div class="index-container">
                       <ol>
-                        <li class="index-subcontent">ブロック要素とインライン要素の違い</li>
-                        <li class="index-subcontent">ブロック要素とインライン要素の領域</li>
-                        <li class="index-subcontent">text-align:centerとmargin:auto;の違い</li>
-                        <li class="index-subcontent">まとめ</li>
+                        <li class="index-subcontent">Difference between block and inline elements</li>
+                        <li class="index-subcontent">Spaces of block and inlne elements</li>
+                        <li class="index-subcontent">Difference between text-align:center; and margin:auto;</li>
+                        <li class="index-subcontent">Summary</li>
                       </ol>
                     </div>
                   </div>
                   <div class="subcontents">
                     <section>
-                        <h2 class="subcontents-title">ブロック要素とインライン要素の違い</h2>
-                        <p>要素の配置を理解するためにはまずブロック要素とインライン要素の違いを理解する必要があります。
-                            <br>なぜならtext-alignとmarginが影響する要素は異なるからです。
+                        <h2 class="subcontents-title">Difference between block and inline elements</h2>
+                        <p>To get how to put elements, you need to understand what block and inline elements are.
+                            <br>This is because there are differences between text-align:center; and margin:auto; in elements they affect.
                         </p>
-                        <p>まずブロック要素とは、見出しや表、章などHTMLファイルの文書を構成するための基本となる要素です。
-                            <br>例としては、&lt;div&gt;や&lt;p&gt;、&lt;section&gt;があげられます。
+                        <p>First of all, block elements are basic elements to organize HTML files as header, matrixes, and so on.
+                            <br>For example, block elements include &lt;div&gt;や&lt;p&gt;、&lt;section&gt;
                         </p>
-                        <p>一方インライン要素とは、ブロック要素内に用いられる要素で、文章の一部として使われます。
-                            <br>例としては、&lt;a&gt;、&lt;span&gt;などがあげられます。
+                        <p>On the other hand, inline elements are used in block elements as a part of sentences.
+                            <br>For example, inline elements include &lt;a&gt;、&lt;span&gt;.
                         </p>
-                        <p>正しい表記（ブロック要素がインライン要素を内包している）</p>
+                        <p>Good (inline elements in block elements)</p>
                             <p class="codepen" data-height="130" data-default-tab="html" data-slug-hash="MWrXzMP" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                                 <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/MWrXzMP">
                                 Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
                                 on <a href="https://codepen.io">CodePen</a>.</span>
                             </p>
-                        <p>誤った表記（ブロック要素がインライン要素に内包されている、ただしHTMLのルールが緩いためブラウザ上では正しく表示されるようにみえるが後に不都合が生じる可能性が高い）</p>
+                        <p>Bad (block elements in inline elements)</p>
                             <p class="codepen" data-height="130" data-default-tab="html" data-slug-hash="RwxJqXo" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                                 <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/RwxJqXo">
                                 Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
@@ -130,71 +130,71 @@
                             </p>
                     </section>
                     <section>
-                        <h2 class="subcontents-title">ブロック要素とインライン要素の領域</h2>
-                        <p>各要素の領域を理解することは、要素の配置の仕方を理解することにつながります。
-                            <br>ではブロック要素とインライン要素の領域の違いについてみていきましょう。
+                        <h2 class="subcontents-title">Spaces of block and inline elements</h2>
+                        <p>By getting the spaces of these elements, you can understand how to use them more easily.
+                            <br>Let's check the differences between block and inline elements in spaces.
                         </p>
                         <p class="codepen" data-height="150" data-default-tab="html,result" data-slug-hash="qBpKLab" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                             <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/qBpKLab">
                             Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
                             on <a href="https://codepen.io">CodePen</a>.</span>
                         </p>
-                        <p>上記の表示からわかることは、</p>
+                        <p>From the above codes, you can realise</p>
                         <ul>
-                            <li>デフォルトのブロック要素は、横幅を指定しない限り、画面の幅いっぱいに広がること（厳密にいえば、このブロック要素を囲む要素いっぱいの幅に広がる）</li>
-                            <li>デフォルトのインライン要素は、内包する文章など分の幅をとること</li>
+                            <li>The spaces of default block elements are the same as the space of your screen (More strictly speaking, the spaces is the same as that of parent block elements.)</li>
+                            <li>The spaces of default inline elements is the same as the contents the elements include.</li>
                         </ul>
-                        <p>上記の違いを理解したうえで次の章をみていきましょう。</p>
+                        <p>After you understand the above codes, let's check the following contents.</p>
                     </section>
                     <section>
-                        <h2 class="subcontents-title">text-align:center;とmargin:auto;の違い</h2>
-                        <p>相違点を論ずる前に、一致点について解説します。
-                            <br>text-align:center;とmargin:auto; の一致点とは、どちらも「ブロック要素に適用」されることです。
+                        <h2 class="subcontents-title">Differences between text-align & margin</h2>
+                        <p>Before discussing the differnces, the common feature should be checked. 
+                            <br>The common feature is that both can be applied for block elements.
                         </p>
-                        <p>下記のコードは、インライン要素にそれぞれtext-align:center;とmargin:auto;適用したものです。
-                            <br>どちらも変化は確認できません。
+                        <p>In the following codes, text-align:center; and margin:auto; are used for inline elements.
+                            <br>You cannot recognize differences visually.
                         </p>
                         <p class="codepen" data-height="150" data-default-tab="html,result" data-slug-hash="qBpKwJR" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                             <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/qBpKwJR">
                             Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
                             on <a href="https://codepen.io">CodePen</a>.</span>
                         </p>
-                        <p>一方下記のコードは、ブロック要素にそれぞれtext-align:center;とmargin:auto;適用したものです。
-                            <br>margin:auto;を適用したブロック要素には変化が見られず、text-align:center;を適用したブロック要素においては中身の文章が中央寄せされています。
+                        <p>On the other hand, in the following codes, text-align:center; and margin:auto; are used for block elements.
+                            <br>We can only see the changes in block elements affected by text-align:center;.
                         </p>
                         <p class="codepen" data-height="150" data-default-tab="html,result" data-slug-hash="OJzEGeB" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                             <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/OJzEGeB">
                             Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
                             on <a href="https://codepen.io">CodePen</a>.</span>
                           </p>
-                        <p>このようにtext-align:center;の役割とは、<strong>「ブロック要素の中身を中央寄せすること」</strong>です。
-                            <br>この際ブロック要素の中身とは、文章やインライン要素が含まれます。
+                        <p>In this way, the role of text-align:center; is <strong>to center contents in block elements horizontally.</strong>
+                            <br>The contents include sentences, inline elements, and so on.
                         </p>
-                        <p>一方でmargin:auto;の役割とは、<strong>「ブロック要素自体を中央寄せすること」</strong>です。
-                            <br>下記のコードをみてください。
+                        <p>On the other hand, the role of margin: auto; is <strong>to center block elements themselves.</strong>
+                            <br>Let's see the following codes
                         </p>
                         <p class="codepen" data-height="130" data-default-tab="html,result" data-slug-hash="YzYvbLJ" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                             <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/YzYvbLJ">
                             Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
                             on <a href="https://codepen.io">CodePen</a>.</span>
                         </p>
-                        <p>このようにブロック要素のwidthを指定しmargin:auto;を用いることで、ブロック要素自体を中央寄せすることができます。</p>
+                        <p>In this way, by clarifing the width of block elements and setting margin:auto;, you can center block elements.</p>
                         <p class="codepen" data-height="130" data-default-tab="html,result" data-slug-hash="LYerogB" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                             <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/LYerogB">
                             Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
                             on <a href="https://codepen.io">CodePen</a>.</span>
                         </p>
-                        <p>またこのようにtext-align:center;を適用することで、中身のインライン要素を中央寄せすることができます。</p>
+                        <p>Moreover, by setting text-align:center;, you can center the contents in block elements.</p>
                     </section>
                     <section>
-                      <h2 class="subcontents-title">まとめ</h2>
-                      <p>最後にtext-align:center;とmargin:auto;の違いについて確認しましょう。</p>
+                      <h2 class="subcontents-title">Summary</h2>
+                      <p>To sum up, the each role of text-align:center; and margin:auto; is...</p>
                       <ul>
-                          <li>text-align:center;とは、<strong>「ブロック要素の中身を中央寄せすること」</strong>です。</li>
-                          <li>margin:auto;とは、<strong>「ブロック要素自体を中央寄せすること」</strong>です。</li>
+                          <li>text-align:center; is <strong>to center the contents (sentences, inline elements...)in block elements.</strong></li>
+                          <li>margin:auto; is <strong>to center block elements themseleves</strong></li>
                       </ul>
-                      <p>いかがでしょうか。わからない場合はひとまずコードを書いてみましょう。そのうち感覚をつかめるはずです!
-                          <br>今回はまたこの辺で。お疲れ様でした!
+                      <p>If you feel difficult to understand, you should write codes again and again!
+                          <br>Good Luck!!!
                       </p>
                     </section>
                     <div class="ad-space">
@@ -215,8 +215,8 @@
             <h4 class="child-profile-title">Profile</h4>
             <img class="child-profile-img" src="img\me2.PNG">
             <h4 class="child-profile-name">NiTa</h4>
-            <p class="child-profile-status">大学生</p>
-            <p class="child-profile-status">Webクリエイター</p>
+            <p class="child-profile-status">College students</p>
+            <p class="child-profile-status">Web Designer</p>
             <ul>
               <li>文系大学生</li>
               <li>24卒</li>
