@@ -1,0 +1,13 @@
+.contents{
+    display: grid;
+    grid-template-columns: 70% 27%;
+    grid-template-rows: 200px 200px 250px 250px 4000px 200px;
+    column-gap: 3%;
+    row-gap: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .it-blog-virtualbox{
+      width: 95%;
+      height: auto;
+    }
