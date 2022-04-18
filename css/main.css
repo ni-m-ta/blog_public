@@ -177,6 +177,126 @@ footer{
       text-align: center;
     }
 
+@media screen and (max-width: 1024px) {
+  .container{
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
+  header{
+    width: 100%;
+    height: 100px;
+    color: gray;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    background-color: white;
+  }
+
+    .removed-options{
+      display: none !important;
+    }
+
+    .shrinked-header{
+      height: 30px;
+      background-color: rgb(255, 255, 255, 0.8);
+    }
+
+    .header-logo-snsIcons{
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+      .header-logo-img{
+        width: 300px;
+        height: 100px;
+      }
+
+      .header-snsIcons{
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: flex-end;
+        color: rgb(70, 70, 70);
+      }
+      
+      .header-snsIcons a:link, .header-snsIcons a:visited, .header-snsIcons a:hover, .header-snsIcons a:active{
+        color: rgb(70, 70, 70);
+      }
+
+        .header-snsIcons .fa-brands, .fa-solid{
+          font-size: 30px;
+          padding: 10px 5px;
+        }
+
+    .header-options{
+      display: none;
+    }
+
+  .top-slides{
+    display: none;
+   }
+
+.profile{
+  height: 600px;
+  width: 100%;
+}
+
+  .profile h2{
+    text-align: center;
+    color: gray;
+  }
+
+  .profile-parent{
+    display: flex;
+    gap: 50px;
+  }
+
+    .profile-photo{
+      display: none;
+    }
+
+    .profile-descripton h3{
+      color: rgb(70, 70, 70);
+    }
+
+    .profile-descripton p{
+      color: gray;
+      padding: 10px 0;
+    }
+
+footer{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(70, 70, 70);
+}
+
+    .footer-options{
+      padding-top: 10px;
+      border-bottom: solid 1px white;
+      text-align: center;
+    }
+
+      .footer-option{
+        padding: 0 5px;
+      }
+
+      .footer-option:link, .footer-option:visited, .footer-option:hover, .footer-option:active {
+        color: black;
+      }
+
+    footer p{
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+  }
   
 
