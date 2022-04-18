@@ -101,14 +101,14 @@
                     <div class="index-container">
                       <ol>
                         <li class="index-subcontent">LinuxとUbuntuについて</li>
-                        <li class="index-subcontent">Ubuntuのインストールの方法</li>
+                        <li class="index-subcontent">Ubuntuの仮インストールの方法</li>
                         <ol>
                             <li>事前準備</li>
                             <li>VirtualBoxのインストール</li>
-                            <li>Ubuntuのインストール</li>
+                            <li>Ubuntuの仮インストール</li>
                             <li>VirtualBoxの設定</li>
                         </ol>
-                        <li class="index-subcontent">Ubuntuのインストール後の設定方法</li>
+                        <li class="index-subcontent">Ubuntuのインストールについて</li>
                         <li class="index-subcontent">まとめ</li>
                       </ol>
                     </div>
@@ -124,7 +124,7 @@
                         </p>
                     </section>
                     <section>
-                        <h2 class="subcontents-title">Ubuntuのインストールの方法</h2>
+                        <h2 class="subcontents-title">Ubuntuの仮インストールの方法</h2>
                         <h3 class="subcontents-subtitle">事前準備</h3>
                         <p>必要なものは以下の通りです。</p>
                         <ul>
@@ -140,8 +140,8 @@
                         <p>まずはじめにVirtualBoxの<a href="https://www.oracle.com/jp/virtualization/technologies/vm/downloads/virtualbox-downloads.html">公式サイト</a>にアクセスします。
                             <br>次に、自分のOSに適したパッケージとページ下方の拡張パックをダウンロードします。（拡張パックには、VirtualBox内のOSにおいてUSBを利用可能にするための機能が含まれます）
                         </p>
-                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualbox1.png">
-                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualbox2.png">
+                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-virtualbox1.png">
+                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-virtualbox2.png">
                         <p>ひとまずVirtualBoxの準備は完了です。残りの設定はUbuntuのインストール後に行います。</p>
                         <h3 class="subcontents-subtitle">Ubuntuの仮インストール</h3>
                         <p>それではUbuntuのインストールをしていきましょう。
@@ -149,36 +149,61 @@
                           <br>その後、Ubuntu 20.&#12295;&#12295;.&#12295;&#12295; LTSをダウンロードします。
                           <br>LTSとはLong Term Supportを意味し、5年間の無償でセキュリティチェックとメンテナンスのためのアップデートを行えます。
                         </p>
-                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-ubuntuDounload.png">
+                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-ubuntuDounload.png">
                         <h3 class="subcontents-subtitle">VirtualBoxの設定</h3>
                         <p>再びVirtualBoxを立ち上げます。
                           <br>「新規」をクリック。
                         </p>
-                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxSetting1.png">
+                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-virtualboxSetting1.png">
                         <p>すると仮想マシンの作成ウインドウがでてきます。
                           <br>名前はUbuntu&#12295;&#12295;&#12295;。&#12295;&#12295;&#12295;の部分は何か名称を入れても入れなくても大丈夫です。
                           <br>その他の部分は、名前を変えた時点で自動的に変更されるのでそのままで大丈夫です。
                         </p>
-                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxSetting2.png">
+                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-virtualboxSetting2.png">
                         <p>メモリサイズは4GB以上にします。もし使用しているパソコンのメモリが4GB未満の場合はその他のUbuntuから派生したOSを使いましょう。</p>
-                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxSetting3.png">
+                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-virtualboxSetting3.png">
                         <p>中段の仮想ハードディスクを作成するをチェック。</p>
-                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxSetting4.png">
+                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-virtualboxSetting4.png">
                         <p>どのタイプでも問題はないようですが、説明書きの通りVDIを選択。</p>
-                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxSetting5.png">
+                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-virtualboxSetting5.png">
                         <p>どのタイプでも問題ないですが、初心者向けには可変サイズで十分かと思います。</p>
-                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxSetting6.png">
+                        <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-virtualboxSetting6.png">
                         <p>容量の目安は25GB程です。
                           <br>作成ボタンをクリックすると仮想環境の作成が完了します。
                         </p>
                     </section>
                     <section>
-                        <h2 class="subcontents-title">Ubuntuのインストール後の設定方法</h2>
-      
+                      <h2 class="subcontents-title">Ubuntuのインストールについて</h2>
+                      <p>再び仮想環境を立ち上げ、「起動」をクリック。</p>
+                      <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-UbuntuInstallation1.png">
+                      <p>すると仮想環境のウインドウに起動ハードディスクの選択画面が出現します。追加ボタンをクリックし、ファイル選択画面にて、先ほどダウンロードしたUbuntu.isoファイルを選択します（ダウンロードのディレクトリにあるはず）。その後起動。</p>
+                      <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-UbuntuInstallation2.png">
+                      <p>数分ほど待つと、上のような画面になります。
+                        <br>デスクトップを日本語表示したい場合、左の言語一覧より日本語を選択します（画像は英語表示）。右側の「Install Ubuntu」をクリック。
+                      </p>
+                      <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-UbuntuInstallation3.png">
+                      <p>キーボードのレイアウトは自身のパソコンのキーボードに合わせて選択します。したがってJapaneseを選択。</p>
+                      <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-UbuntuInstallation4.png">
+                      <p>上記のチェックをそのままに「Continue」をクリック。</p>
+                      <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-UbuntuInstallation5.png">
+                      <p>「Install Now」をクリック。</p>
+                      <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-UbuntuInstallation6.png">
+                      <p>再び「Continue」をクリック</p>
+                      <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-UbuntuInstallation7.png">
+                      <p>デフォルトのままTokyoを選択。</p>
+                      <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-UbuntuInstallation8.png">
+                      <p>ユーザー名とパスワードは任意のものを記入。今後も必要になるのでメモしてください。</p>
+                      <img class="it-blog-ubuntuInstall-screenshot" src="img/it-blog-virtualboxAndUbuntu/it-blog-UbuntuInstallation9.png">
+                      <p>しばらく待つと上記の画面になり、再起動を求められます。指示に従い「Restart Now」をクリック。
+                        <br>再起動後確認すると、やっとUbuntuを使えるようになります。
+                      </p>
                     </section>
                     <section>
                       <h2 class="subcontents-title">まとめ</h2>
-         
+                      <p>いかがでしたでしょうか。なかなか面倒な道のりでしたが、なんとかたどり着けたでしょうか。
+                        <br>次回はインストール後の設定について詳しく解説していきます。（アップデートや、WiFiの使い方などなど必要なことが盛りだくさん）
+                        <br>それではまたお会いしましょう!お疲れさまでした!
+                      </p>
                     </section>
                     <div class="ad-space">
                       <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HH8I9" rel="nofollow">
@@ -257,6 +282,83 @@
             <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6DC69" rel="nofollow">
             <img border="0" width="234" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001070000&mc=1"></a>
             <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6DC69" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" rel="nofollow">
+            <img border="0" width="250" height="250" alt="" src="https://www29.a8.net/svt/bgt?aid=220402191259&wid=002&eno=01&mid=s00000001642006048000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191209&wid=002&eno=01&mid=s00000003196005012000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6KMIP" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www24.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001104000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6KMIP" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+4CL1NE+348+1C6TPD" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=220418437263&wid=002&eno=01&mid=s00000000404008094000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=3N8BYD+4CL1NE+348+1C6TPD" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6NETT" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001117000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6NETT" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3YAN4Q+49ZM+601S1" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191239&wid=002&eno=01&mid=s00000019957001008000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N7ZF3+3YAN4Q+49ZM+601S1" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4323YY+50+550G8H" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=220402191247&wid=002&eno=01&mid=s00000000018031075000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3N7ZF3+4323YY+50+550G8H" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+41V8RE+2KAI+NYHDT" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=220402191245&wid=002&eno=01&mid=s00000011961004024000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3N7ZF3+41V8RE+2KAI+NYHDT" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3VBH3U+3T8U+67C4H" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191234&wid=002&eno=01&mid=s00000017787001042000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+3VBH3U+3T8U+67C4H" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6DC69" rel="nofollow">
+            <img border="0" width="234" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001070000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6DC69" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+555UOQ+1B26+IJNHT" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=220418437311&wid=002&eno=01&mid=s00000006099003115000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N8BYD+555UOQ+1B26+IJNHT" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" rel="nofollow">
+            <img border="0" width="250" height="250" alt="" src="https://www29.a8.net/svt/bgt?aid=220402191259&wid=002&eno=01&mid=s00000001642006048000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+4CL1NE+348+1C6TPD" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=220418437263&wid=002&eno=01&mid=s00000000404008094000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=3N8BYD+4CL1NE+348+1C6TPD" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191209&wid=002&eno=01&mid=s00000003196005012000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+50ZTGA+2G98+62ENL" rel="nofollow">
+            <img border="0" width="350" height="240" alt="" src="https://www28.a8.net/svt/bgt?aid=220418437304&wid=002&eno=01&mid=s00000011438001019000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3N8BYD+50ZTGA+2G98+62ENL" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6KMIP" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www24.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001104000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6KMIP" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6NETT" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001117000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6NETT" alt="">
+            <a href="https://h.accesstrade.net/sp/cc?rk=0100n6l400m8p3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://h.accesstrade.net/sp/rr?rk=0100n6l400m8p3" alt="アクセストレード パートナーサイト募集" border="0" /></a>
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3YAN4Q+49ZM+601S1" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191239&wid=002&eno=01&mid=s00000019957001008000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N7ZF3+3YAN4Q+49ZM+601S1" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4323YY+50+550G8H" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=220402191247&wid=002&eno=01&mid=s00000000018031075000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3N7ZF3+4323YY+50+550G8H" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+41V8RE+2KAI+NYHDT" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=220402191245&wid=002&eno=01&mid=s00000011961004024000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3N7ZF3+41V8RE+2KAI+NYHDT" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3VBH3U+3T8U+67C4H" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191234&wid=002&eno=01&mid=s00000017787001042000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+3VBH3U+3T8U+67C4H" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6DC69" rel="nofollow">
+            <img border="0" width="234" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001070000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6DC69" alt="">
+            <a href="https://h.accesstrade.net/sp/cc?rk=0100n6l400m8p3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://h.accesstrade.net/sp/rr?rk=0100n6l400m8p3" alt="アクセストレード パートナーサイト募集" border="0" /></a>
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+58QGBE+3E1C+631SX" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=220418437317&wid=002&eno=01&mid=s00000015816001022000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N8BYD+58QGBE+3E1C+631SX" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+555UOQ+1B26+IJNHT" rel="nofollow">
+            <img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=220418437311&wid=002&eno=01&mid=s00000006099003115000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N8BYD+555UOQ+1B26+IJNHT" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+50ZTGA+2G98+62ENL" rel="nofollow">
+            <img border="0" width="350" height="240" alt="" src="https://www28.a8.net/svt/bgt?aid=220418437304&wid=002&eno=01&mid=s00000011438001019000&mc=1"></a>
+            <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3N8BYD+50ZTGA+2G98+62ENL" alt="">
           </div>
         </aside>
         <aside class="ad-bottom">
