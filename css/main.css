@@ -126,7 +126,7 @@ body {
   width: 100%;
 }
 
-  .profile h2{
+  h2{
     text-align: center;
     color: gray;
   }
@@ -149,8 +149,11 @@ body {
     }
 
     .profile-descripton p{
-      color: gray;
       padding: 10px 0;
+    }
+
+    p{
+      color: rgb(70, 70, 70);
     }
 
 footer{
