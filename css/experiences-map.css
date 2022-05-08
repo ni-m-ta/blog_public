@@ -1,0 +1,8 @@
+.visaApplication{
+    background-image: url('../img/others-blog-visaApplication/others-blog-visaApplication1.jpg');
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
