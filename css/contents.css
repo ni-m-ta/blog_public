@@ -108,9 +108,9 @@ ul{
 /*css for blog maps*/
   .main-container{
     display: grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 380px 380px;
     grid-template-rows: 200px 200px 200px 200px;
-    column-gap: 10%;
+    column-gap: 3%;
     row-gap: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
