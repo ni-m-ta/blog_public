@@ -18,7 +18,7 @@
    <link rel="icon" href="img/iconForTab.png">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/contents.css">
-   <link rel="stylesheet" href="css/css/it-blog-ubuntuScrollChrome.css">
+   <link rel="stylesheet" href="css/it-blog-ubuntuScrollChrome.css">
    <script src="https://kit.fontawesome.com/00f67a9916.js" crossorigin="anonymous"></script>
    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3886315435685807"
      crossorigin="anonymous"></script>
@@ -55,7 +55,7 @@
           </nav>
         </div>
     </header>
-    <h1 class="title">Study Abroad Blog</h1>
+    <h1 class="title">IT Blog</h1>
     <div class="container">
       <div class="contents">
         <aside class="ad-top">
@@ -82,9 +82,9 @@
                     <div class="face-icon">
                       <img src="img/me2.PNG">
                     </div>
-                    <div class="chat">今回はUbuntu上でGoogle Chromeを使うときに困るスクロール遅い問題を解決していきましょう。
-                        <br>今回は<a rel="https://github.com/ElectricRCAircraftGuy">Gabriel Staplesさん</a>のアイデアをお借りして設定をしていきます。
-                        <br>実際の<a rel="https://askubuntu.com/questions/254367/permanently-fix-chrome-scroll-speed">サイト</a>はこちらから
+                    <div class="chat">今回はUbuntu上でChromeを使うときに困るスクロール遅い問題を解決します。
+                        <br>今回は<a href="https://github.com/ElectricRCAircraftGuy">Gabriel Staplesさん</a>のアイデアをお借りして設定をしていきます。
+                        <br>実際の<a href="https://askubuntu.com/questions/254367/permanently-fix-chrome-scroll-speed">サイト</a>はこちらから
                     </div>
                   </div>
                   <div class="achievements">
@@ -117,19 +117,63 @@
                             <br>その後以下のコマンドをターミナルに入力します。
                         </p>
                         <div class="like-terminal">
-                            <p class="like-terminalCommands">sudo apt update
-                                <br>sudo at install imwheel
-                                <br>gedit ~/.imwheelrc
-                            </p>
+                          <p class="like-terminalCommands">sudo apt update
+                              <br>sudo apt install imwheel
+                              <br>gedit ~/.imwheelrc
+                          </p>
                         </div>
-                        
+                        <p>「sudo apt install imwheel」でスクロール量を変更するためのソフトウェアをインストールします。
+                          <br>「gedit ~/.imwheelrc」でデフォルトのテキストエディタに.imwheelrcファイルを作成します。
+                        </p>
+                        <p>次に作成した.imwheelrcファイルに以下の記述を行います。</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands"><a class="color-red">".*-chrome*"</a>
+                            <br>None,      Up,   Button4, <a class="color-red">5</a>
+                            <br>None,      Down, Button5, <a class="color-red">5</a>
+                            <br>Control_L, Up,   Control_L|Button4
+                            <br>Control_L, Down, Control_L|Button5
+                            <br>Shift_L,   Up,   Shift_L|Button4
+                            <br>Shift_L,   Down, Shift_L|Button5
+                          </p>
+                        </div>
+                        <p>「".*-chrome*"」はスクロールスピードの変更をchromeにのみ適用するということを指します。
+                          <br>また赤字の「5」はスクロールスピードを指します。早めたければ大きい数字に、遅くしたいのであれば小さい数字に変更してください。
+                        </p>
+                        <img class="content-img" src="img/ubuntuScrollChrome/ubuntuScrollChrome3.png">
+                        <p>設定したスクロールスピードを確認するために再びターミナルに戻ります。以下の記述を行いスピードを確認してください。</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">imwheel</p>
+                        </div>
+                        <p>設定したスピードを修正する際は、上記の数字を変えたのちに、以下の記述を行い設定したスピードを取り消してください。</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">killall imwheel</p>
+                        </div>
+                        <p>再度テストする際は、ターミナルに「imwheel」を記入してください。</p>
                     </section>
+                    <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4T96L6+3GOM+67Z9T" rel="nofollow">
+                    <img border="0" width="728" height="90" alt="" src="https://www28.a8.net/svt/bgt?aid=220402191291&wid=002&eno=01&mid=s00000016159001045000&mc=1"></a>
+                    <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3N7ZF3+4T96L6+3GOM+67Z9T" alt="">
                     <section>
-                        <h2 class="subcontents-title">Ubuntu起動時のアプリケーション設定</h2>
-                       
+                      <h2 class="subcontents-title">Ubuntu起動時のアプリケーション設定</h2>
+                      <p>適切なスピードを設定できたのであれば、次の作業に移ります。
+                        <br>今のままでは毎回ターミナルに「imwheel」を記述する必要があるので、Ubuntu起動時に自動的に動くように設定しましょう。
+                      </p> 
+                      <p>再びターミナルを開き、以下の記述を行い「startup application preferences」を開きます。</p>
+                      <div class="like-terminal">
+                        <p class="like-terminalCommands">gnome-session-properties</p>
+                      </div>
+                      <img class="content-img" src="img/ubuntuScrollChrome/ubuntuScrollChrome1.png">
+                      <p>そして項目を一つ追加し、「command」部分に「imwheel」を入力してください。
+                        <br>そして保存を忘れずに。
+                        <br>再起動してChromeを開いてみてください。サクサク加減に感動します。
+                      </p>
+                      <img class="content-img" src="img/ubuntuScrollChrome/ubuntuScrollChrome2.png">
                     </section>
                     <section>
                       <h2 class="subcontents-title">まとめ</h2>
+                      <p>いかがでしたでしょうか。今後もUbuntuに関するtipsを紹介していくので是非ご覧ください!
+                        <br>お疲れさまでした!
+                      </p>
                     </section>
                     <div class="ad-space">
                       <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HH8I9" rel="nofollow">
@@ -193,25 +237,10 @@
             <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" rel="nofollow">
             <img border="0" width="250" height="250" alt="" src="https://www29.a8.net/svt/bgt?aid=220402191259&wid=002&eno=01&mid=s00000001642006048000&mc=1"></a>
             <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" alt="">
-            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" rel="nofollow">
-            <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191209&wid=002&eno=01&mid=s00000003196005012000&mc=1"></a>
-            <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" alt="">
-            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6KMIP" rel="nofollow">
-            <img border="0" width="300" height="250" alt="" src="https://www24.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001104000&mc=1"></a>
-            <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6KMIP" alt="">
-            <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+6Z8YU2+1SVU+6DZBL" rel="nofollow">
-            <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220418437422&wid=002&eno=01&mid=s00000008409001073000&mc=1"></a>
-            <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N8BYD+6Z8YU2+1SVU+6DZBL" alt="">
-            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6NETT" rel="nofollow">
-            <img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001117000&mc=1"></a>
-            <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6NETT" alt="">
             <a href="https://h.accesstrade.net/sp/cc?rk=0100n6l400m8p3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://h.accesstrade.net/sp/rr?rk=0100n6l400m8p3" alt="アクセストレード パートナーサイト募集" border="0" /></a>
             <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+6Y23MI+3W82+BZO4H" rel="nofollow">
             <img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=220418437420&wid=002&eno=01&mid=s00000018173002014000&mc=1"></a>
             <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=3N8BYD+6Y23MI+3W82+BZO4H" alt="">
-            <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+490G0Q+348+6DC69" rel="nofollow">
-            <img border="0" width="234" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191257&wid=002&eno=01&mid=s00000000404001070000&mc=1"></a>
-            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N7ZF3+490G0Q+348+6DC69" alt="">
             <a href="https://h.accesstrade.net/sp/cc?rk=0100n6l400m8p3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://h.accesstrade.net/sp/rr?rk=0100n6l400m8p3" alt="アクセストレード パートナーサイト募集" border="0" /></a>
             <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+58QGBE+3E1C+631SX" rel="nofollow">
             <img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=220418437317&wid=002&eno=01&mid=s00000015816001022000&mc=1"></a>
