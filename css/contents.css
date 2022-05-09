@@ -302,4 +302,13 @@ ul{
       border-bottom: 3px solid rgba(113, 177, 226, 0.8);
     }
         
+/*screen like terminal*/
+.like-terminal{
+  width: 95%;
+  background-color: rgba(190, 190, 190, 0.8);
+  font-family: 'Courier New', Courier, monospace;
+}
 
+  .like-terminalCommands{
+    margin-left: 5px;
+  }
