@@ -293,6 +293,10 @@ ul{
     height: auto;
   }
 
+  h2{
+    text-align: left;
+  }
+
     .subcontents-subtitle{
       width: 100%;
       height: 35px;
