@@ -83,7 +83,7 @@
                       <img src="img/me2.PNG">
                     </div>
                     <div class="chat">今回は一度は手こずるAnaconda上でのパスの通し方(環境変数の設定)について説明していきます!
-                        <br>同時に.bashrcと.bash_profileについても解説するので頑張っていきましょう!
+                        <br>別の仮想環境でもAnacondaに内包されているプログラムを使えるようにしましょう!
                     </div>
                   </div>
                   <div class="achievements">
@@ -100,6 +100,7 @@
                     <p class="index-title">目次</p>
                     <div class="index-container">
                       <ol>
+                        <li class="index-subcontent">自分が困った点</li>
                         <li class="index-subcontent">環境変数とパスについて</li>
                         <li class="index-subcontent">.bashrcと.bash_prifle(.profile)についてわかる</li>
                         <ol>
@@ -113,10 +114,26 @@
                   </div>
                   <div class="subcontents">
                     <section>
+                      <h2 class="subcontents-title">自分が困った点</h2>
+                      <p>時はVirtualBoxに入れているUbuntu上でAnacondaを使っているときです。
+                        <br>仮想環境(名はstatistics)をつくり、Anacondaにもとから入っているプログラム(numpyなどの統計解析に用いるソフトウェア)をstatistics上で使おうとしたときです。
+                        <br>いくらimportしようとしてもnumpy達を使えない問題に直面。調べた結果どうやらOS(Ubuntu)の環境変数を設定する必要があるそうです。
+                      </p>
+                  </section>
+                    <section>
                         <h2 class="subcontents-title">環境変数とパスについて</h2>
+                        <p>自分の復習もかねて今回のキーワードである環境変数とパスについて解説します。</p>
+                        <p>「環境変数」とはOSがもともと保存した設定であり、その設定を子プロセスが利用するための仕組み。
+                          <br>要はOSの初期設定みたいなものでしょうか(もし表現が不正確であればご指摘ください)
+                        </p>
+                        <p>「パス」とは、実行したいプログラムの保管場所を指し示す道筋と言えると思います。
+                          <br>よく耳にする「パスを通す」という言葉は、「パスを設定する」と言い換えられるでしょうか。
+                        </p>
+                        <p>今回目標とすることは、環境変数に自らパスを設定することで、プログラム名をコマンドに入力するだけでそのプログラムを利用できるようになることです。</p>
                     </section>
                     <section>
                         <h2 class="subcontents-title">.bashrcと.bash_prifle(.profile)についてわかる</h2>
+                        <p></p>
                         <h3 class="subcontents-subtitle">起動時のファイルの読み取り順</h3>
                         <h3 class="subcontents-subtitle">記述方法</h3>
                     </section>
