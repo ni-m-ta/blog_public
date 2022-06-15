@@ -11,14 +11,14 @@
   gtag('config', 'G-TSPKVQ1899');
 </script>
    <meta charset="UTF-8">
-   <title>【Ubuntu-22.04】How to change brightness ~BrightnessController~</title>
-   <meta name="description" content="Today, I will introduce how to change brightness in Ubuntu 22.04. If you are looking for how to fix brightness controller, this page will be help you!">
-   <meta name="keywords" content="NiTa, nita, Linux, Ubuntu, brightness">
+   <title>【Ubuntu 22.04】How to use Docker and Git to develop apps locally</title>
+   <meta name="description" content="Today, I will introduce how to use Docker and Git to develop apps locally, this page will be help you!">
+   <meta name="keywords" content="NiTa, nita, Linux, Ubuntu-22.04, Ubuntu, Docker, Git">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" href="img/iconForTab.png">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/contents.css">
-   <link rel="stylesheet" href="css/it-blog-ubuntuBrightness-en.css">
+   <link rel="stylesheet" href="css/it-blog-dockerGitLocalEnvironment.css">
    <script src="https://kit.fontawesome.com/00f67a9916.js" crossorigin="anonymous"></script>
    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3886315435685807"
      crossorigin="anonymous"></script>
@@ -74,25 +74,30 @@
           <div class="main">
             <article>
               <div class="child-container">
-                  <a class="date">2022/6/9</a>
-                  <a class="english" href="css-blog-elementsPosition-en.html">For English Ver.</a>
-                  <h2 class="main-title">【Ubuntu-22.04】How to change brightness ~BrightnessController~</h2>
+                  <a class="date">2022/6/16</a>
+                  <h2 class="main-title">【Ubuntu 22.04】How to use Docker and Git to develop apps locally</h2>
                   <div class="main-img"><img src="img/main1.png"></div>
                   <div class="main-start-explanation">
                     <div class="face-icon">
                       <img src="img/me2.PNG">
                     </div>
-                    <div class="chat">Today, I will introduce how to change brightness by using Brightness Controller.
-                        <br>Let's Ubuntu!
+                    <div class="chat">Today, I will introduce how to use Docker and Git to develop apps locally.
+                        <br>Let's develop!
                     </div>
                   </div>
                   <div class="index">
                     <p class="index-title">Index</p>
                     <div class="index-container">
                       <ol>
-                        <li class="index-subcontent">What is Brittness Controller</li>
-                        <li class="index-subcontent">Steps about how to change setting to apply Brghtness Controller</li>
-                        <li class="index-subcontent">How to fix brightness controller</li>
+                        <li class="index-subcontent">What is Docker</li>
+                        <li class="index-subcontent">Steps to run a test container</li>
+                            <ol>
+                                <li>Check local environment</li>
+                                <li>Install Docker Compose</li>
+                                <li>How to organize the contents</li>
+                                <li>To run a test container</li>
+                            </ol>
+                        <li class="index-subcontent">Tips</li>
                         <li class="index-subcontent">Summary</li>
                       </ol>
                     </div>
@@ -100,58 +105,15 @@
                   <div class="subcontents">
                     <section>
                         <h2 class="subcontents-title">Explanation for Brightness Controller</h2>
-                        <p>Brightness Controller is a simple app for Ubuntu to change the brightness of your monitor. 
-                          <br>It is easy to use, so if there is no way to change the brigtness you can test it!
-                        </p>
                     </section>
                     <section>
-                        <h2 class="subcontents-title">Steps about how to change settings</h2>
-                        <p>Install Brightness Controller</p>
-                        <div class="like-terminal">
-                          <p class="like-terminalCommands">$ sudo apt update</p>
-                          <p class="like-terminalCommands">$ sudo add-apt-repository ppa:apandada1/brightness-controller</p>
-                          <p class="like-terminalCommands">$ sudo apt update</p>
-                        </div>
-                        <p>That's all!</p>          
+                        <h2 class="subcontents-title">Steps about how to change settings</h2>      
                     </section>
                     <section>
                       <h2 class="subcontents-title">How to fix BrightnessController</h2>
-                      <p>Sometimes, your Brightness Controller does not work.
-                        <br>So, I will introduce 3 solutions.
-                      </p>
-                      <p>1. Disable wayland</p>
-                      <p>Wayland is a communication protocol and set as default protocol for Ubuntu 22.04.
-                        <br>However, sometimes Brightness Controller does not work on Wayland. When you disable Wayland, you can use Brightness Controller.
-                      </p>
-                      <div class="like-terminal">
-                        <p class="like-terminalCommands">$ sudo vi /etc/gdm3/custom.conf</p>
-                      </div>
-                      <p>In the custom.conf file,</p>
-                      <div class="like-terminal">
-                        <p class="like-terminalCommands">WatlandEnable=False</p>
-                      </div>
-                      <p>2. Change settings for drivers</p>
-                      <div class="like-terminal">
-                        <p class="like-terminalCommands">$ sudo vi /etc/default/grub</p>
-                      </div>
-                      <p>In the grub file,</p>
-                      <div class="like-teminal">
-                        <p class="like-terminalCommands">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight="vendor"</p>
-                      </div>
-                      <p>3. Change settings for drivers in terms of the size of monitor</p>
-                      <div class="like-terminal">
-                        <p class="like-terminalCommands">$ sudo vi /etc/default/grub</p>
-                      </div>
-                      <p>In the file, the default setting of "GRUB_GFXMODE=640x480"
-                        <br>choose your monitor size. For example, because my monitor size is 1280*1080,
-                      </p>
-                      <div class="like-terminal">
-                        <p class="like-terminalCommands">GRUB_GFXMODE=1280x1080</p>
-                      </div>
                     </section>
                     <section>
                       <h2 class="subcontents-title">Summary</h2>
-                      <p>I hope you spend good ubuntu life!!!</p>
                     </section>
                     <div class="ad-space">
                       <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HH8I9" rel="nofollow">
