@@ -42,3 +42,16 @@
   grid-column-start: 1;
   grid-column-end: 2;
 }
+
+.dockerGitLocalEn{
+  background-image: url('../img/docker.png');
+  background-size: 190px 200px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.dockerGitLocalEn .blog-title, .blog-subtitle{
+  color: rgb(34, 33, 33);
+}
