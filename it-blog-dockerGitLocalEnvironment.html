@@ -93,7 +93,7 @@
                         <li class="index-subcontent">Steps to run a test container</li>
                             <ol>
                                 <li>Check local environment</li>
-                                <li>Install Docker Compose</li>
+                                <li>Install Docker and Docker Compose</li>
                                 <li>How to organize the contents</li>
                                 <li>To run a test container</li>
                             </ol>
@@ -104,16 +104,127 @@
                   </div>
                   <div class="subcontents">
                     <section>
-                        <h2 class="subcontents-title">Explanation for Brightness Controller</h2>
+                        <h2 class="subcontents-title">What is Docker</h2>
+                        <p>Docker is a tool to provide environments where places which store programs can be separated from host OS.
+                          <br>By doing this, it is possible to develop programs without messy for your local environment, and allow your programs to work well on other OS.
+                        </p>
                     </section>
                     <section>
-                        <h2 class="subcontents-title">Steps about how to change settings</h2>      
+                        <h2 class="subcontents-title">Steps to run a test container</h2> 
+                        <p>I will introduce how to set up environments to develope programs locally.
+                          <br>Today, I will intstall Docker Engine for Linux. 
+                          <br>When I installed Docker and other programs, I refer to <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ja">Community</a> & <a href="https://blackbird-blog.com/docker-on-ubuntu">ばったんの技術ブログ</a>                     
+                        </p>
+                        <h2 class="subcontents-subtitle">Check local environment</h2>
+                        <p>This is my local environment.</p>
+                        <img src="img/it-blog-dockerGitLocalEnvironment/img1.png">
+                        <img src="img/it-blog-dockerGitLocalEnvironment/img2.png">
+                        <p>I assume that you have installed Git.</p>
+                        <h2 class="subcontents-subtitle">Install Docker and Docker Compose</h2>
+                        <p>First, write the following commands in your command line to update existing packages</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ sudo apt update</p>
+                        </div>
+                        <p>To install programs through http, you will install following programs.</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ sudo apt install apt-transport-https ca-certificates curl software-properties-common</p>
+                        </div>
+                        <p>To add GPG key in your system</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</p>
+                        </div>
+                        <p>To add Docker repository to apt source</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"</p>
+                        </div>
+                        <p> To update, </p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ sudo apt update</p>
+                        </div>
+                        <p>From now on, you will install Docker.
+                          <br>But in my case, I cannot success in the following process. So, I will introduce the basic process and my way.
+                        </p>
+                        <p>Here is the basic process</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ sudo apt install docker-ce</p>
+                        </div>
+                        <p>To check whether it is going well</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ sudo systemctl status docker</p>
+                        </div>
+                        <p>If it goes well,</p>
+                        <img src="img/it-blog-dockerGitLocalEnvironment/img4.png">
+                        <p>However, in my case...</p>
+                        <img src="img/it-blog-dockerGitLocalEnvironment/img3.png">
+                        <p>According to the error message, docker-ce has something wrong.
+                          <br>So before reinstall docker-ce, you will disconnect the network. The following idea comes from <a href="https://forums.docker.com/t/subprocess-installed-post-installation-script-returned-error-exit-status-1/37444/3">the site.</a>
+                        </p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ sudo systemctl restart systemd-networkd,service
+                            <br>$ sudo apt remove docker-ce
+                            <br>$ sudo apt install docker-ce
+                            <br>$ sudo systemctl status docker.service
+                          </p>
+                        </div>
+                        <p>After the above commands, my terminal was like this.</p>
+                        <img src="img/it-blog-dockerGitLocalEnvironment/img4.png">
+                        <p>Next, you will install Docker Compose.
+                          <br>The prugin is so useful because the plugin can allow the user to organize & manage several containers by writing one ymal file.
+                        </p>
+                        <p>Before installing, you will check whether you have already installed or not.
+                          <br>If you use an old docker, may be you have the old version of Docker Compose (Compose V1).
+                        </p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ sudo docker compose --version</p>
+                        </div>
+                        <p>If not, you will install in the following way. When you will install Docker Compose in the second line, you should check the version of Docker Compose (here, v2.6.0). </p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ mkdir /usr/local/lib/docker/cli-plugins
+                            <br>$ curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugins/docker-compose
+                            <br>$ chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+                            <br>$ docker compose version
+                          </p>                          
+                        </div>
+                        <p>When you can see the following output, you have done the all setting.</p>
+                        <div class="like-terminal">
+                          <p class="like-termimalCommands">Docker Compose version v2.6.0</p>
+                        </div>
+                        <h2 class="subcontents-subtitle">How to organize the contents</h2> 
+                        <p>From now on, we will write codes on yml file and test files (.html and .css).
+                          <br>My codes is available on <a href="https://github.com/ni-m-ta/compose-test">the page of my GitHub</a>. So, check the these codes.
+                          <br>When writing my codes, I refer to <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04">the site.</a>
+                        </p>
+                        <h2 class="subcontents-subtitle">To run a test container</h2> 
+                        <p>To run your containers, you will put the following command</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ cd ~/FOLDERNAME
+                          <br>$ sudo docker compose up -d
+                        </div>
+                        <p>The output will be...</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">     Name     Command     State    Ports
+                            <br>------------------------------------------------
+                          </p>
+                        </div>
+                        <p>In your brouser, by inputting "localhost:8000", you can see the web page.</p>
+                        <p>If you start or stop running, you can input the commands</p>
+                        <div class="like-terminal">
+                          <p class="like-terminalCommands">$ sudo docker compose start
+                          <br>$ sudo docker compose stop
+                        </div>
                     </section>
                     <section>
-                      <h2 class="subcontents-title">How to fix BrightnessController</h2>
+                      <h2 class="subcontents-title">Tips</h2>
+                      <ul>
+                        <li>When writing yml files, you have to indent two spaces.</li>
+                        <li>There are different version for Docker Compose like V1 and V2.</li>
+                        <li>There are several types for Docker. For linux users, Docker Engin. For Windows and macOS, Docker Desktop.</li>
+                        <li>WIthout dockerhub, you can enjoy the benefits of Docker if you develop your programms by yourself.</li>
+                      </ul>
                     </section>
                     <section>
                       <h2 class="subcontents-title">Summary</h2>
+                      <p>Done!!! If you have a comment or question, feel free to send my e-mail!!!</p>
                     </section>
                     <div class="ad-space">
                       <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HH8I9" rel="nofollow">
@@ -171,6 +282,43 @@
             <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4P35CQ+4XLM+5ZMCH" rel="nofollow">
             <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191284&wid=002&eno=01&mid=s00000023017001006000&mc=1"></a>
             <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3N7ZF3+4P35CQ+4XLM+5ZMCH" alt="">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HVT75" rel="nofollow">
+              <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=210418188370&wid=002&eno=01&mid=s00000000018015097000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=3H9ZPO+64AFDM+50+2HVT75" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64VUZE+1WP2+6D4GH" rel="nofollow">
+              <img border="0" width="300" height="250" alt="" src="https://www27.a8.net/svt/bgt?aid=210418188371&wid=002&eno=01&mid=s00000008903001069000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3H9ZPO+64VUZE+1WP2+6D4GH" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4T96L6+3GOM+68EPD" rel="nofollow">
+              <img border="0" width="250" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=220402191291&wid=002&eno=01&mid=s00000016159001047000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3N7ZF3+4T96L6+3GOM+68EPD" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+58QGBE+3E1C+631SX" rel="nofollow">
+              <img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=220418437317&wid=002&eno=01&mid=s00000015816001022000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N8BYD+58QGBE+3E1C+631SX" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+555UOQ+1B26+IJNHT" rel="nofollow">
+              <img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=220418437311&wid=002&eno=01&mid=s00000006099003115000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N8BYD+555UOQ+1B26+IJNHT" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+6Z8YU2+1SVU+6DZBL" rel="nofollow">
+              <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220418437422&wid=002&eno=01&mid=s00000008409001073000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N8BYD+6Z8YU2+1SVU+6DZBL" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4T96L6+3GOM+6B70H" rel="nofollow">
+              <img border="0" width="250" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=220402191291&wid=002&eno=01&mid=s00000016159001060000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=3N7ZF3+4T96L6+3GOM+6B70H" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4QVG62+3GWO+6F1WH" rel="nofollow">
+              <img border="0" width="250" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191287&wid=002&eno=01&mid=s00000016188001078000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3N7ZF3+4QVG62+3GWO+6F1WH" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HJ5Y9" rel="nofollow">
+              <img border="0" width="234" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=210418188370&wid=002&eno=01&mid=s00000000018015038000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3H9ZPO+64AFDM+50+2HJ5Y9" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4P35CQ+4XLM+5ZMCH" rel="nofollow">
+              <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191284&wid=002&eno=01&mid=s00000023017001006000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3N7ZF3+4P35CQ+4XLM+5ZMCH" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" rel="nofollow">
+              <img border="0" width="250" height="250" alt="" src="https://www29.a8.net/svt/bgt?aid=220402191259&wid=002&eno=01&mid=s00000001642006048000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" alt="">
+              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" rel="nofollow">
+              <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191209&wid=002&eno=01&mid=s00000003196005012000&mc=1"></a>
+              <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" alt="">
+
           </div>
         </aside>
         <aside class="ad-bottom">
