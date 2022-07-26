@@ -112,32 +112,111 @@
                         <p>In this section, you will create Dockerfile, requirements.txt, and docker-compose.yml.</p>
                         <ol>
                             <li>Crate an empty folder</li>
-                                <p>You can choose any name for the folder. In my case, the folder name is "logform".(I will create the webapp to discuss freely)</p>
+                              <p>You can choose any name for the folder. In my case, the folder name is "logform".(I will create the webapp to discuss freely)</p>
                             <li>Create a new file in the folder (here logform). The name of the new file is "Dockerfile".</li>
-                                <p>This Dockerfile defines an application's image. Once you build, you can run the image in a containter.</p>    
+                              <p>This Dockerfile defines an application's image. Once you build, you can run the image in a containter.</p>    
                             <li>Write down the following content to the Dockerfile.</li>
-                                <div class="like-terminal">
-                                    <p class="like-terminalCommands">#syntax=docker/dockerfile:1
-                                        <br>FROM python:3
-                                        <br>ENV PYTHONDONTWRITEBYCODE=1
-                                        <br>ENV PYTHONUNBUFFERED=1
-                                        <br>WORKDIR /code
-                                        <br>COPY requirements.txt /code/
-                                        <br>RUN pip install -r requirements.txt
-                                        <br>COPY . /code/
-                                    </p>
-                                </div>    
+                              <div class="like-terminal">
+                                <p class="like-terminalCommands">#syntax=docker/dockerfile:1
+                                    <br>FROM python:3
+                                    <br>ENV PYTHONDONTWRITEBYCODE=1
+                                    <br>ENV PYTHONUNBUFFERED=1
+                                    <br>WORKDIR /code
+                                    <br>COPY requirements.txt /code/
+                                    <br>RUN pip install -r requirements.txt
+                                    <br>COPY . /code/
+                                </p>
+                              </div>
+                              <p>This Dockerfile starts with a Python 3 parent image. The parent image can be modified by a new directory called "code" and installing the Python requirements defined in the requirements.txt file.</p>
+                            <li>Save and close this Dokerfile.</li>
+                            <li>Create a requirements.txt in your project directory. </li>
+                              <p>To create the text file, you will input the following command in your terminal.</p>
+                              <div class="like-terminal">
+                                <p class="like-terminalCommands">
+                                      Django>=3.0,&#60;4.0
+                                  <br>psycopg2>=2.8
+                                </p>
+                              </div>
+                              <p>This file will be runed by "RUN pip install -r requirements.txt" command in your Dockerfile</p>
+                              <p>Save and close this requirements.txt.</p>
+                            <li>Create a file called docker-compose.yml in your project directory. And Write down the following configuration in the docker-compose.yml.</li>
+                              <div class="like-terminal">
+                                <p class="like-terminalCommands">
+                                      version: '3.9'
+                                  <br>services:
+                                  <br>  db:
+                                  <br>    image: mysql:5.7
+                                  <br>    environment:
+                                  <br>      MYSQL_ROOT_PASSWORD: root
+                                  <br>      MYXQL_USER: 'django'
+                                  <br>      MYSQL_PASSWORD: 'django'
+                                  <br>      MYSQL_DATABASE: 'django'
+                                  <br>    ports:
+                                  <br>      - 3306:3306
+                                  <br>    volumes:
+                                  <br>      - ./data/db:/var/lib/mysql/data
+                                  <br>  web:
+                                  <br>    build:
+                                  <br>    command: python3 manage.py runserver 0.0.0.0:8000
+                                  <br>    volumes:
+                                  <br>      - .:/code
+                                  <br>    links:
+                                  <br>      - db
+                                  <br>    depend_on:
+                                  <br>      - db
+                                </p>
+                              </div>
+                              <p>The file describes the foundamental information of your project.</p>
+                            <li>Save and close the docker-compose.yml file.</li>
                         </ol>
                     </section>
                     <section>
                         <h2 class="subcontents-title">Start a Django project</h2> 
+                        <p>In this section, you will start a Django project based on what you have created in the previous section.</p>
+                        <ol>
+                          <li>Go to the root of your project directory.</li>
+                          <li>Create the Django project by running the following command. Before running the following command, you should check whether you have installed Django or not. If not, you have to install Django.</li>
+                            <div class="like-terminal">
+                              <p class="like-terminalCommands">$ sudo docker compose run web django-admin startproject composeexample</p>
+                            </div>
+                          <li>After the process of docker-compose done, you should check whether good or not.</li>
+                            <div class="like-terminal">
+                              <p class="like-terminalCommands">~/logform$ ls -l</p>
+                            </div>
+                            <p>If your commands are like the following img, you have successed starting your Django project.</p>
+                            <img src="img/it-blog-dockerDjangoMysql/1.png">
+                        </ol>
                     </section>
                     <section>
                       <h2 class="subcontents-title">Connect the project to Database</h2>
-
+                      <p>In this section, let's prepare teh database for Django.</p>
+                      <ol>
+                        <li>In your project directory, edit the composeexample/settings.py file in the following way.</li>
+                          <div class="like-terminal">
+                            <p class="like-terminalCommands">
+                                  # settings.py
+                              <br>import os
+                              <br>[...]
+                              <br>DATABASE = {
+                              <br>    'default': {
+                              <br>                  'ENGINE': 'django.db.backends.postgresql',
+                              <br>                  'NAME': BASE_DIR / 'db.splite3',
+                              <br>                  'USER': os.environ.get('MYSQL_USER'),
+                              <br>                  'PASSWORD': os.environ.get('MYSQL_DATABASE'),
+                              <br>                  'HOST': 'db',
+                              <br>                  'PORT': 5432,
+                              <br>              }
+                              <br>         }
+                            </p>
+                          </div>
+                        <li>Save and close the file.</li>
+                        <li>Run the sudo docker compose up command in teh top level directory of your project.</li>
+                        <li>To check whether it works well, you will input in your brousa "http://localhost:8000".</li>
+                      </ol>
                     </section>
                     <section>
                       <h2 class="subcontents-title">Summary</h2>
+                      <p>That's it! If you find any problems, you can feel free to email me!!!</p>
                     </section>
                     <div class="ad-space">
                       <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HH8I9" rel="nofollow">
@@ -210,28 +289,7 @@
               <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+555UOQ+1B26+IJNHT" rel="nofollow">
               <img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=220418437311&wid=002&eno=01&mid=s00000006099003115000&mc=1"></a>
               <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3N8BYD+555UOQ+1B26+IJNHT" alt="">
-              <a href="https://px.a8.net/svt/ejp?a8mat=3N8BYD+6Z8YU2+1SVU+6DZBL" rel="nofollow">
-              <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220418437422&wid=002&eno=01&mid=s00000008409001073000&mc=1"></a>
-              <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N8BYD+6Z8YU2+1SVU+6DZBL" alt="">
-              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4T96L6+3GOM+6B70H" rel="nofollow">
-              <img border="0" width="250" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=220402191291&wid=002&eno=01&mid=s00000016159001060000&mc=1"></a>
-              <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=3N7ZF3+4T96L6+3GOM+6B70H" alt="">
-              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4QVG62+3GWO+6F1WH" rel="nofollow">
-              <img border="0" width="250" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191287&wid=002&eno=01&mid=s00000016188001078000&mc=1"></a>
-              <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=3N7ZF3+4QVG62+3GWO+6F1WH" alt="">
-              <a href="https://px.a8.net/svt/ejp?a8mat=3H9ZPO+64AFDM+50+2HJ5Y9" rel="nofollow">
-              <img border="0" width="234" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=210418188370&wid=002&eno=01&mid=s00000000018015038000&mc=1"></a>
-              <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=3H9ZPO+64AFDM+50+2HJ5Y9" alt="">
-              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4P35CQ+4XLM+5ZMCH" rel="nofollow">
-              <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191284&wid=002&eno=01&mid=s00000023017001006000&mc=1"></a>
-              <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3N7ZF3+4P35CQ+4XLM+5ZMCH" alt="">
-              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" rel="nofollow">
-              <img border="0" width="250" height="250" alt="" src="https://www29.a8.net/svt/bgt?aid=220402191259&wid=002&eno=01&mid=s00000001642006048000&mc=1"></a>
-              <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3N7ZF3+4A7B8A+CO4+100AO1" alt="">
-              <a href="https://px.a8.net/svt/ejp?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" rel="nofollow">
-              <img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=220402191209&wid=002&eno=01&mid=s00000003196005012000&mc=1"></a>
-              <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=3N7ZF3+3GFMZE+ONS+TU8U9" alt="">
-
+            
           </div>
         </aside>
         <aside class="ad-bottom">

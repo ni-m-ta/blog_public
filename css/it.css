@@ -55,3 +55,16 @@
 .dockerGitLocalEn .blog-title, .blog-subtitle{
   color: rgb(34, 33, 33);
 }
+
+.dockerDjangoMysql{
+  background-image: url('../img/docker.png');
+  background-size: 190px 200px;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.dockerDjangoMysql .blog-title, .blog-subtitle{
+  color: rgb(34, 33, 33);
+}
