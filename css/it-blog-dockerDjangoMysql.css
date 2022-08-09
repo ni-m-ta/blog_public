@@ -22,7 +22,6 @@
     display: grid;
     grid-template-columns: 97%;
     grid-template-rows: 200px 250px 4400px 200px;
-    column-gap: 3%;
     row-gap: 20px;
     padding-bottom: 50px;
     font-size: 18px;
