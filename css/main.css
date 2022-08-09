@@ -180,15 +180,6 @@ footer{
       text-align: center;
     }
 
-@media screen and (max-width: 1024px) {
-  .container{
-    width: 100%;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   header{
     width: 100%;
     height: 100px;
@@ -297,9 +288,25 @@ footer{
     footer p{
       text-align: center;
     }
-  }
 
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 1024px) {
+    .container{
+      width: 100%;
+      padding-right: 5px;
+      padding-left: 5px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    /* 960px以下に適用されるCSS（タブレット用） */
+  }
+  @media screen and (max-width: 560px) {
+    /* 560px以下に適用されるCSS（スマホ用） */   
+    .header-logo-img{
+      width: 220px;
+      height: 70px;
+    }   
   }
   
 
