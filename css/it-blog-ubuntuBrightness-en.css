@@ -10,3 +10,19 @@
 .english{
     display: none;
 }
+
+@media screen and (max-width: 560px){
+  /* 560px以下に適用されるCSS（スマートフォン用） */
+  .contents{
+    display: grid;
+    grid-template-columns: 97%;
+    grid-template-rows: 200px 250px 1600px 200px;
+    row-gap: 20px;
+    padding-bottom: 50px;
+    font-size: 18px;
+  }
+
+  .index{
+    height: 500px;
+  }
+}

@@ -180,17 +180,6 @@ footer{
       text-align: center;
     }
 
-  header{
-    width: 100%;
-    height: 100px;
-    color: gray;
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    background-color: white;
-  }
-
     .removed-options{
       display: none !important;
     }
@@ -228,14 +217,6 @@ footer{
           font-size: 30px;
           padding: 10px 5px;
         }
-
-    .header-options{
-      display: none;
-    }
-
-  .top-slides{
-    display: none;
-   }
 
 .profile{
   height: 600px;
@@ -303,6 +284,12 @@ footer{
   }
   @media screen and (max-width: 560px) {
     /* 560px以下に適用されるCSS（スマホ用） */   
+    .header-options{
+      font-size: 11px;
+    }
+    .header{
+      height: 130px;
+    }
     .header-logo-img{
       width: 220px;
       height: 70px;
