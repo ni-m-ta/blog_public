@@ -6,3 +6,33 @@
     grid-column-start: 1;
     grid-column-end: 2;
   }
+
+  @media screen and (max-width: 1024px) {
+
+  }
+  @media screen and (max-width: 960px) {
+    /* 960px以下に適用されるCSS（タブレット用） */
+  
+  }
+  @media screen and (max-width: 560px) {
+    /* 560px以下に適用されるCSS（スマホ用） */   
+    .main-container{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 200px;
+      column-gap: 3%;
+      row-gap: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .html-base{
+      background-image: url('../img/myBlog_top_programming3.jpg');
+      background-size: cover;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  
+  }

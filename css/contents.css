@@ -23,17 +23,6 @@ ul{
     row-gap: 20px;
     padding-bottom: 50px;
   }
-  
-  
-  .ad-top{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: white;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-    text-align: center;
-  }
 
   .main{
     grid-row-start: 2;
@@ -52,36 +41,6 @@ ul{
     background-color: white;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   }
-
-  .ad-side{
-    grid-row-start: 3;
-    grid-row-end: 7;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    background-color: white;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-    text-align: center;
-  }
-
-  .ad-space{
-    text-align: center;
-    width: 100%;
-  }
-
-  .ad-bottom{
-    grid-row-start: 6;
-    grid-row-end: 7;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background-color: white;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-    text-align: center;
-    justify-content: middle;
-  }
-
-    .ad{
-      padding-top: 5px;
-    }
 
 .child-container{
   width: 95%;
@@ -341,11 +300,6 @@ ul{
       grid-template-columns: 100%;
       grid-template-rows: 200px 400px;
     }
-    
-    
-    .ad-top{
-      display: none;
-    }
   
     .main{
       width: 100%;
@@ -354,18 +308,6 @@ ul{
     }
   
     .child-profile{
-      display: none;
-    }
-
-    .ad-space{
-      display: none;
-    }
-  
-    .ad-side{
-      display: none;
-    }
-  
-    .ad-bottom{
       display: none;
     }
   

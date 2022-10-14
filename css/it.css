@@ -68,3 +68,90 @@
 .dockerDjangoMysql .blog-title, .blog-subtitle{
   color: rgb(34, 33, 33);
 }
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 960px) {
+  /* 960px以下に適用されるCSS（タブレット用） */
+
+}
+@media screen and (max-width: 560px) {
+  /* 560px以下に適用されるCSS（スマホ用） */   
+  .contents{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
+    column-gap: 3%;
+    row-gap: 20px;
+    padding-bottom: 50px;
+  }
+
+  .ubuntuScrollChrome{
+    background-image: url('../img/main1.png');
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+.ubuntuInstall{
+    background-image: url('../img/main1.png');
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+.ubuntuPassword{
+    background-image: url('../img/main1.png');
+    background-size: cover;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+.ubuntuInstallandSetting{
+  background-image: url('../img/main1.png');
+  background-size: cover;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.ubuntuBrightness-en{
+  background-image: url('../img/main1.png');
+  background-size: cover;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.dockerGitLocalEn{
+  background-image: url('../img/docker.png');
+  background-size: 190px 200px;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.dockerGitLocalEn .blog-title, .blog-subtitle{
+  color: rgb(34, 33, 33);
+}
+
+.dockerDjangoMysql{
+  background-image: url('../img/docker.png');
+  background-size: 190px 200px;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+}

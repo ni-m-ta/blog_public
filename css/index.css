@@ -22,6 +22,9 @@
 
     @media screen and (max-width: 560px) {
         /* 560px以下に適用されるCSS（スマホ用） */
+        .top-slides{
+            display: none;
+        }
         .recent-blogs{
             height: 600px;
             width: 100%;
