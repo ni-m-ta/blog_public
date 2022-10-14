@@ -18,7 +18,7 @@ ul{
 .contents{
     display: grid;
     grid-template-columns: 70% 27%;
-    grid-template-rows: 200px 200px 250px 250px 5910px 200px;
+    grid-template-rows: 200px 200px 250px 1000px;
     column-gap: 3%;
     row-gap: 20px;
     padding-bottom: 50px;
@@ -325,6 +325,7 @@ ul{
   }
   @media screen and (max-width: 560px) {
     /* 560px以下に適用されるCSS（スマホ用） */   
+
     .title{
       width: 100%;
       height: 50px;
@@ -336,6 +337,9 @@ ul{
   
   .contents{
       padding-bottom: 50px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 200px 400px;
     }
     
     
