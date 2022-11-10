@@ -1,16 +1,12 @@
 .contents{
     display: grid;
     grid-template-columns: 70% 27%;
-    grid-template-rows: 200px 200px 250px 250px 3350px 200px;
+    grid-template-rows: 200px 200px 250px 250px 3400px 200px;
     column-gap: 3%;
     row-gap: 20px;
     padding-bottom: 50px;
     font-size: 18px;
   }
-
-.chat{
-    font-size: 18px;
-}
 
 @media screen and (max-width: 960px) {
   /* 960px以下に適用されるCSS（タブレット用） */

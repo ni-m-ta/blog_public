@@ -156,7 +156,7 @@ ul{
         text-align:left;
         border:3px solid #464646;
         color:#333333;
-        font-size:14px;
+        font-size:15px;
         font-weight:bold;
         border-radius:7px;
         -webkit-border-radius:7px;
@@ -214,6 +214,7 @@ ul{
     margin: 20px auto;
     background-color: rgba(198, 216, 230, 0.3);
     border: 3px solid rgba(198, 216, 230, 0.8);
+    font-size: 15px;
   }
 
     .index-container{
@@ -263,6 +264,10 @@ ul{
       padding-left: 10px;
       letter-spacing: 3px;
       border-bottom: 3px solid rgba(113, 177, 226, 0.8);
+    }
+
+    .child-profile ul{
+      font-size: 15px;
     }
         
 /*screen like terminal*/

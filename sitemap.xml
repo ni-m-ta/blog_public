@@ -1,120 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
 <url>
   <loc>https://nita-blog.site/</loc>
   <priority>1.0</priority>
-  <lastmod>2022-06-18T03:07:23+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/index.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-06-18T03:07:23+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/profile.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/experiences-map.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:17:47+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/html-map.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:17:47+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/css-map.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:17:47+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/javascript-map.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/php-map.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/it.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-06-18T03:07:23+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/portfolio.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:29:10+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/contact-form.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:17:56+09:00</lastmod>
+</url>
+<url>
+  <loc>https://nita-blog.site/it-blog-dockerDjangoMysql.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/it-blog-dockerGitLocalEnvironment.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-06-18T03:07:23+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/it-blog-ubuntuBrightness-en.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-06-12T01:15:29+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/it-blog-ubuntuInstallandSetting.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-06-09T00:28:16+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/it-blog-ubuntuScrollChrome.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-06-09T00:28:16+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/others-blog-visaApplication.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/css-blog-elementsPosition.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:17:47+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/html-blog-base.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:17:47+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/it-blog-ubuntuInstall.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-06-09T00:28:16+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/privacy-policy.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/site-map.html</loc>
   <priority>0.8</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:19+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/it-blog-UbuntuPassword.html</loc>
   <priority>0.7</priority>
-  <lastmod>2022-06-09T00:28:16+09:00</lastmod>
+  <lastmod>2022-10-14T13:18:08+09:00</lastmod>
 </url>
 <url>
   <loc>https://nita-blog.site/css-blog-elementsPosition-en.html</loc>
   <priority>0.7</priority>
-  <lastmod>2022-05-10T00:16:52+09:00</lastmod>
+  <lastmod>2022-10-14T13:17:47+09:00</lastmod>
 </url>
 
 </urlset>
