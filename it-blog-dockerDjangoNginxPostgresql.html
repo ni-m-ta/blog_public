@@ -209,6 +209,107 @@
                         </p>
                       </div>
                       <p>docker-compose.yml ファイルを編集。</p>
+                      <div class="like-terminal">
+                        <p class="like-terminalCommands">
+                          version: '3.8'
+                          <br>services:
+                          <br>  web:
+                          <br>    build: ./app
+                          <br>    command: python manage.py runserver 0.0.0.0:8000
+                          <br>    volumes:
+                          <br>      - ./app/:/usr/src/app/
+                          <br>    ports:
+                          <br>      - 8000:8000
+                          <br>     env_file:
+                          <br>      - ./.env.dev
+                          <br>      depend_on:
+                          <br>        - db
+                          <br>  db:
+                          <br>    image:  postgres:13.0-alpine
+                          <br>    volumes:
+                          <br>      - postgres_data:/var/lib/postgresql/data
+                          <br>    environment:
+                          <br>      - POSTGRES_USER=root
+                          <br>      - POSTGRES_PASSWORD=root
+                          <br>      - POSTGRES_DB=root_dev
+                          <br>
+                          <br>   volumes:
+                          <br>      postgres_data:
+                        </p>
+                      </div>
+                      <p>volumesとはデータを永続化するための保管場所です。本来コンテナを削除した際データ諸々消えますが、それを防ぐための機能がボリュームです。</p>
+                      <p>また.env.devファイルを編集。</p>
+                      <div class="like-terminal">
+                        <p class="like-terminalCommands">
+                          DEBUG=1
+                          <br>SECRET_KEY=foo
+                          <br>DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
+                          <br>SQL_ENGINE=django.db.backends.postgresql
+                          <br>SQL_DATABASE=db_dev
+                          <br>SQL_USER=root
+                          <br>SQL_PASSWORD=root
+                          <br>SQL_HOST=db
+                          <br>SQL_PORT=5432
+                        </p>
+                      </div>
+                      <p>またsettings.pyのDATABASESを編集。</p>
+                      <div class="like-terminal">
+                        <p class="like-terminalCommands">
+                          DATABASES = {
+                          <br>    "default":  {
+                          <br>        "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
+                          <br>        "NAME": os.environ.get("SQL_DATABASE", BASE_DIR / "db.sqlit3"),
+                          <br>        "USER": os.environ.get("SQL_USER", "user"),
+                          <br>        "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
+                          <br>        "HOST": os.environ.get("SQL_HOST", "localhost"),
+                          <br>        "PORT": os.environ.get("SQL_PORT", "5432"),
+                          <br>    }
+                          <br>}
+                        </p>
+                      </div>
+                      <p>ここで、envの情報をもとに構築されるようになりました。</p>
+                      <p>次にDockerファイルを編集</p>
+                      <div class="like-terminal">
+                        <p class="like-terminalCommands">
+                          # pull official base image
+                          <br>FROM python:3.9.6-alpine
+                          <br>
+                          <br># set work directory
+                          <br>WORKDIR /usr/src/app
+                          <br>
+                          <br># set environment variables
+                          <br>ENV PYTHONDONTWRITEBYTECODE 1
+                          <br>ENV PYTHONUNBUFFERED 1
+                          <br>
+                          <br># install psycopg2 dependencies
+                          <br>RUN apk update \ 
+                          <br>    && apk add postgresql-dev gcc python3-dev musl-dev
+                          <br>
+                          <br># install dependencies
+                          <br>RUN pip install --upgrade pip
+                          <br>COPY ./requirements.txt .
+                          <br>RUN pip install -r requirements.txt
+                          <br>
+                          <br># copy project
+                          <br>COPY . .
+                        </p>
+                      </div>
+                      <p>psycopg2とはPythonからPostgreSQLにアクセスするためのツールです。</p>
+                      <p>requirements.txtに以下のコードを追加。</p>
+                      <div class="like-terminal">
+                        <p class="like-terminalCommands">
+                          Django==3.2.6
+                          <br>psycopg2-binary==2.9.1
+                        </p>
+                      </div>
+                      <p>ここであらためてビルドしてみましょう。</p>
+                      <div class="like-terminal">
+                        <p>
+                          $ docker-compose down -v(もし以前のものをビルドしたままであれば...)
+                          <br>$ docker-compose up -d --build
+                          <br>$ docker-compose exec web python manage.py migrate --noinput
+                        </p>
+                      </div>
                     </section>
                     <section>
                     </section>
