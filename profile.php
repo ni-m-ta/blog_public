@@ -4,6 +4,7 @@ $description = 'エンジニアのNiTaです!';
 include 'templates/head.php';
 ?>
    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/contents.css">
   </head>
   <body>
   <?php include('templates/header.php');?>
