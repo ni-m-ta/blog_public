@@ -1,60 +1,14 @@
-<!DOCTYPE html>
- <html lang="ja">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSPKVQ1899"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<?php
+$title = '【Ubuntu-22.04】OS無しデスクトップにUbuntu環境を構築';
+$description = 'みなさんこんにちは、今回は備忘録を兼ねて新しく買ったデスクトップにUbuntuの環境を構築していきます。至らぬ点はございますがメール等でご指摘ください！';
+$keywords = 'NiTa, nita, にさとたつや, Linux, Ubuntu, 環境構築';
+include '../templates/head.php';
+?>
+   <link rel="stylesheet" href="../css/it/ubuntuInstallandSetting.css">
 
-  gtag('config', 'G-TSPKVQ1899');
-</script>
-   <meta charset="UTF-8">
-   <title>【Ubuntu-22.04】備忘録、OS無しデスクトップ環境の構築</title>
-   <meta name="description" content="みなさんこんにちは、今回は備忘録を兼ねて新しく買ったデスクトップにUbuntuの環境を構築していきます。至らぬ点はございますがメール等でご指摘ください！">
-   <meta name="keywords" content="NiTa, nita, にさとたつや, Linux, Ubuntu, 環境構築">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="img/iconForTab.png">
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/contents.css">
-   <link rel="stylesheet" href="css/it-blog-ubuntuInstallandSetting.css">
-   <script src="https://kit.fontawesome.com/00f67a9916.js" crossorigin="anonymous"></script>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3886315435685807"
-     crossorigin="anonymous"></script>
   </head>
   <body>
-    <header id="header">
-      <div class="header-logo-snsIcons">
-        <a href="index.html"><img class="header-logo-img" src="img/myBlog_header_logo3.png"></a>
-         <div class="header-snsIcons">
-           <a href="https://twitter.com/TATSUYA_NISATO"><i class="fa-brands fa-twitter"></i></a>
-           <a href="https://www.facebook.com/profile.php?id=100049389249541"><i class="fa-brands fa-facebook-f"></i></a>
-           <a href="https://github.com/ni-m-ta"><i class="fa-brands fa-github"></i></a>
-           <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-        <div class="container">
-          <nav>
-            <ul class="header-options">
-                <li class="header-option"><a href="index.html">HOME</a></li>
-                <li class="header-option"><a href="profile.html">Profile</a></li>
-                <li class="header-option header-option-parent">Blog
-                  <ul class="header-dropdown-menu">
-                    <li><a class="header-dropdown-menu-option" href="experiences-map.html">体験談</a></li>
-                    <li><a class="header-dropdown-menu-option" href="html-map.html">HTML</a></li>
-                    <li><a class="header-dropdown-menu-option" href="css-map.html">CSS</a></li>
-                    <li><a class="header-dropdown-menu-option" href="javascript-map.html">JavaScript</a></li>
-                    <li><a class="header-dropdown-menu-option" href="php-map.html">PHP</a></li>
-                    <li><a class="header-dropdown-menu-option" href="it.html">IT</a></li>
-                  </ul>
-                </li>
-                <li class="header-option"><a href="portfolio.html">Portfolio</a></li>
-                <li class="header-option"><a  href="contact-form.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
+  <?php include('../templates/header.php');?>
     <h1 class="title">IT Blog</h1>
     <div class="container">
       <div class="contents">
@@ -63,12 +17,11 @@
             <article>
               <div class="child-container">
                   <a class="date">2022/6/9</a>
-                  <a class="english" href="css-blog-elementsPosition-en.html">For English Ver.</a>
                   <h2 class="main-title">【Ubuntu-22.04】備忘録、OS無しデスクトップ環境の構築</h2>
-                  <div class="main-img"><img src="img/main1.png"></div>
+                  <div class="main-img"><img src="../img/main1.png"></div>
                   <div class="main-start-explanation">
                     <div class="face-icon">
-                      <img src="img/me2.PNG">
+                      <img src="../img/me2.PNG">
                     </div>
                     <div class="chat">今回はOS無しデスクトップを買ったのでそちらの環境構築をしていきます!
                         <br>できるだけ簡潔にわかりやすく解説していくので頑張っていきましょう!
@@ -153,31 +106,10 @@
           </article>
           </div>
         </main>
-        <div class="side child-profile">
-          <div class="child-container">
-            <h4 class="child-profile-title">Profile</h4>
-            <img class="child-profile-img" src="img\me2.PNG">
-            <h4 class="child-profile-name">NiTa</h4>
-            <p class="child-profile-status">大学生</p>
-            <ul>
-              <li>24卒</li>
-              <li>カリフォルニア留学中</li>
-              <li>ねことポケモンが好き</li>
-            </ul>
-          </div>
-        </div>
+        <?php include('../templates/profile.php');?>
       </div>
     </div>
-    <footer>
-      <div class="container footer-container">
-        <div class="footer-options">
-          <a class="footer-option" href="privacy-policy.html">Privacy Policy</a>
-          <a class="footer-option" href="contact-form.html">Contact Form</a>
-          <a class="footer-option" href="site-map.html">Site Map</a>
-        </div>
-        <p>&COPY; NiTa BLOG</p>
-      </div>
-    </footer>
+    <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>

@@ -1,60 +1,14 @@
-<!DOCTYPE html>
- <html lang="ja">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSPKVQ1899"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<?php
+$title = '【Ubuntu 20.04】Chromeのスクロール遅い問題を簡単に解決';
+$description = 'バックエンジニアのNiTaです!今回はUbuntu上で使うChromeのスクロール遅い問題を解決しましょう!';
+$keywords = 'NiTa, nita, にさとたつや, ubuntu, chrome, スクロール';
+include '../templates/head.php';
+?>
+   <link rel="stylesheet" href="../css/it/ubuntuScrollChrome.css">
 
-  gtag('config', 'G-TSPKVQ1899');
-</script>
-   <meta charset="UTF-8">
-   <title>【Ubuntu 20.04】Chromeのスクロール遅い問題を簡単に解決</title>
-   <meta name="description" content="学生エンジニアのnitaです!今回はUbuntu上で使うChromeのスクロール遅い問題を解決しましょう!">
-   <meta name="keywords" content="NiTa, nita, にさとたつや, ubuntu, chrome, スクロール">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="img/iconForTab.png">
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/contents.css">
-   <link rel="stylesheet" href="css/it-blog-ubuntuScrollChrome.css">
-   <script src="https://kit.fontawesome.com/00f67a9916.js" crossorigin="anonymous"></script>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3886315435685807"
-     crossorigin="anonymous"></script>
   </head>
   <body>
-    <header id="header">
-      <div class="header-logo-snsIcons">
-        <a href="index.html"><img class="header-logo-img" src="img/myBlog_header_logo3.png"></a>
-         <div class="header-snsIcons">
-           <a href="https://twitter.com/TATSUYA_NISATO"><i class="fa-brands fa-twitter"></i></a>
-           <a href="https://www.facebook.com/profile.php?id=100049389249541"><i class="fa-brands fa-facebook-f"></i></a>
-           <a href="https://github.com/ni-m-ta"><i class="fa-brands fa-github"></i></a>
-           <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-        <div class="container">
-          <nav>
-            <ul class="header-options">
-                <li class="header-option"><a href="index.html">HOME</a></li>
-                <li class="header-option"><a href="profile.html">Profile</a></li>
-                <li class="header-option header-option-parent">Blog
-                  <ul class="header-dropdown-menu">
-                    <li><a class="header-dropdown-menu-option" href="experiences-map.html">体験談</a></li>
-                    <li><a class="header-dropdown-menu-option" href="html-map.html">HTML</a></li>
-                    <li><a class="header-dropdown-menu-option" href="css-map.html">CSS</a></li>
-                    <li><a class="header-dropdown-menu-option" href="javascript-map.html">JavaScript</a></li>
-                    <li><a class="header-dropdown-menu-option" href="php-map.html">PHP</a></li>
-                    <li><a class="header-dropdown-menu-option" href="it.html">IT</a></li>
-                  </ul>
-                </li>
-                <li class="header-option"><a href="portfolio.html">Portfolio</a></li>
-                <li class="header-option"><a  href="contact-form.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
+  <?php include('../templates/header.php');?>
     <h1 class="title">IT Blog</h1>
     <div class="container">
       <div class="contents">
@@ -63,12 +17,11 @@
             <article>
               <div class="child-container">
                   <a class="date">2022/5/9</a>
-                  <a class="english" href="css-blog-elementsPosition-en.html">For English Ver.</a>
                   <h2 class="main-title">【Ubuntu 20.04】Chromeのスクロール遅い問題を簡単に解決</h2>
-                  <div class="main-img"><img src="img/main1.png"></div>
+                  <div class="main-img"><img src="../img/main1.png"></div>
                   <div class="main-start-explanation">
                     <div class="face-icon">
-                      <img src="img/me2.PNG">
+                      <img src="../img/me2.PNG">
                     </div>
                     <div class="chat">今回はUbuntu上でChromeスクロール遅い問題。
                         <br>今回は<a href="https://github.com/ElectricRCAircraftGuy">Gabriel Staplesさん</a>のアイデアをお借りして設定をしていきます。
@@ -127,7 +80,7 @@
                         <p>「".*-chrome*"」はスクロールスピードの変更をchromeにのみ適用するということを指します。
                           <br>また赤字の「5」はスクロールスピードを指します。早めたければ大きい数字に、遅くしたいのであれば小さい数字に変更してください。
                         </p>
-                        <img class="content-img" src="img/ubuntuScrollChrome/ubuntuScrollChrome3.png">
+                        <img class="content-img" src="../img/ubuntuScrollChrome/ubuntuScrollChrome3.png">
                         <p>設定したスクロールスピードを確認するために再びターミナルに戻ります。以下の記述を行いスピードを確認してください。</p>
                         <div class="like-terminal">
                           <p class="like-terminalCommands">imwheel</p>
@@ -147,12 +100,12 @@
                       <div class="like-terminal">
                         <p class="like-terminalCommands">gnome-session-properties</p>
                       </div>
-                      <img class="content-img" src="img/ubuntuScrollChrome/ubuntuScrollChrome1.png">
+                      <img class="content-img" src="../img/ubuntuScrollChrome/ubuntuScrollChrome1.png">
                       <p>そして項目を一つ追加し、「command」部分に「imwheel」を入力してください。
                         <br>そして保存を忘れずに。
                         <br>再起動してChromeを開いてみてください。サクサク加減に感動します。
                       </p>
-                      <img class="content-img" src="img/ubuntuScrollChrome/ubuntuScrollChrome2.png">
+                      <img class="content-img" src="../img/ubuntuScrollChrome/ubuntuScrollChrome2.png">
                     </section>
                     <section>
                       <h2 class="subcontents-title">まとめ</h2>
@@ -165,32 +118,10 @@
           </article>
           </div>
         </main>
-        <div class="side child-profile">
-          <div class="child-container">
-            <h4 class="child-profile-title">Profile</h4>
-            <img class="child-profile-img" src="img\me2.PNG">
-            <h4 class="child-profile-name">NiTa</h4>
-            <p class="child-profile-status">大学生</p>
-            <p class="child-profile-status">Webクリエイター</p>
-            <ul>
-              <li>文系大学生</li>
-              <li>24卒</li>
-              <li>カリフォルニア留学中</li>
-            </ul>
-          </div>
-        </div>
+        <?php include('../templates/profile.php');?>
       </div>
     </div>
-    <footer>
-      <div class="container footer-container">
-        <div class="footer-options">
-          <a class="footer-option" href="privacy-policy.html">Privacy Policy</a>
-          <a class="footer-option" href="contact-form.html">Contact Form</a>
-          <a class="footer-option" href="site-map.html">Site Map</a>
-        </div>
-        <p>&COPY; NiTa BLOG</p>
-      </div>
-    </footer>
+    <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
