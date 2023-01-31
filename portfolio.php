@@ -3,6 +3,7 @@ $title = 'Portfolio';
 $description = 'バックエンドエンジニアのNiTaです!';
 include 'templates/head.php';
 ?>
+   <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/portfolio.css">
   </head>
   <body>

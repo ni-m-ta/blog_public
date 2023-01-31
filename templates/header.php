@@ -19,7 +19,7 @@
                     <li><a class="header-dropdown-menu-option" href="../html/map.php">HTML</a></li>
                     <li><a class="header-dropdown-menu-option" href="../cssBlog/map.php">CSS</a></li>
                     <li><a class="header-dropdown-menu-option" href="../javascript-map.php">JavaScript</a></li>
-                    <li><a class="header-dropdown-menu-option" href="../php/map.html">PHP</a></li>
+                    <li><a class="header-dropdown-menu-option" href="../php/map.php">PHP</a></li>
                     <li><a class="header-dropdown-menu-option" href="../it/map.php">IT</a></li>
                   </ul>
                 </li>

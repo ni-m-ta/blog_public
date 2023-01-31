@@ -3,6 +3,7 @@ $title = 'NiTa BLOG | Profile';
 $description = 'エンジニアのNiTaです!';
 include 'templates/head.php';
 ?>
+   <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
   <?php include('templates/header.php');?>

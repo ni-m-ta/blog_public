@@ -3,6 +3,7 @@ $title = 'Site Map';
 $description = 'バックエンドエンジニアのNiTaです!';
 include 'templates/head.php';
 ?>
+   <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/site-map.css">
   </head>
   <body>

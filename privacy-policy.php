@@ -3,6 +3,7 @@ $title = 'Privacy Policy';
 $description = 'バックエンドエンジニアのNiTaです!';
 include 'templates/head.php';
 ?>
+   <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/privacy-policy.css">
   </head>
   <body>
