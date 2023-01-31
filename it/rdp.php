@@ -1,7 +1,6 @@
 <?php
 $title = '【リモートデスクトップ】Mac上でWindowsのデスクトップをリモートで操作';
 $description = 'エンジニアのNiTaです!今回はRDPについて解説していきます。Jan/2023';
-$keywords = 'Nita nita 似里達哉　RDP リモートデスクトップ';
 include '../templates/head.php';
 ?>
 <link rel="stylesheet" href="../css/it/rdp.css">
