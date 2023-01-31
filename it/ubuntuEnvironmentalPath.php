@@ -1,7 +1,6 @@
 <?php
 $title = '【Ubuntu20.04】意外と簡単!環境変数パスを通して仮想環境を使いこなす。~Anaconda~';
 $description = 'ここでは環境パスの通し方、もとい.bashrcと.bash_profile(.profile)について説明していきます。';
-$keywords = 'NiTa, nita, にさとたつや, Linux, Ubuntu, 環境変数パス, .bashrc, .bash_profile, .profile';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/ubuntuEnvironmentPath.css">
@@ -93,7 +92,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

@@ -1,7 +1,6 @@
 <?php
 $title = '【Ubuntu-22.04】OS無しデスクトップにUbuntu環境を構築';
 $description = 'みなさんこんにちは、今回は備忘録を兼ねて新しく買ったデスクトップにUbuntuの環境を構築していきます。至らぬ点はございますがメール等でご指摘ください！';
-$keywords = 'NiTa, nita, にさとたつや, Linux, Ubuntu, 環境構築';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/it/ubuntuInstallandSetting.css">
@@ -111,7 +110,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

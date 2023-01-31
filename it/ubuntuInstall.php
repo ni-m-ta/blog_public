@@ -1,7 +1,6 @@
 <?php
 $title = '【初心者向け】意外と簡単!LinuxのUbuntuインストール解説~仮想環境編~';
 $description = 'ここでは初心者向けにUbuntuのインストール作業について解説を行います。仮想環境を用いたUbuntuのインストール手順を一つ一つ解説していますので簡単にインストールできます!';
-$keywords = 'NiTa, nita, にさとたつや, Linux, Ubuntu, インストール, 日本語, 仮想環境, Virtual Box';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/ubuntuInstall.css">
@@ -155,7 +154,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

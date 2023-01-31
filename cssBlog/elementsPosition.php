@@ -1,7 +1,6 @@
 <?php
 $title = '【初心者向け】左右中央寄せをしたい!text-alignとmargin';
 $description = 'ここでは初心者向けにCCSの解説を行います。今回はtext-align:center;とmargin:auto;の違いを理解してみましょう!';
-$keywords = 'NiTa, nita, にさとたつや, CSS, text-align, margin';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/css/elementsPosition.css">
@@ -152,7 +151,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

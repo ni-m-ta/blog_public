@@ -12,19 +12,19 @@
           <nav>
             <ul class="header-options">
                 <li class="header-option"><a href="../index.html">HOME</a></li>
-                <li class="header-option"><a href="../profile.html">Profile</a></li>
+                <li class="header-option"><a href="../profile.php">Profile</a></li>
                 <li class="header-option header-option-parent">Blog
                   <ul class="header-dropdown-menu">
-                    <li><a class="header-dropdown-menu-option" href="../experiences-map.html">体験談</a></li>
-                    <li><a class="header-dropdown-menu-option" href="../html-map.html">HTML</a></li>
-                    <li><a class="header-dropdown-menu-option" href="../css-map.html">CSS</a></li>
-                    <li><a class="header-dropdown-menu-option" href="../javascript-map.html">JavaScript</a></li>
-                    <li><a class="header-dropdown-menu-option" href="../php-map.html">PHP</a></li>
-                    <li><a class="header-dropdown-menu-option" href="../it.html">IT</a></li>
+                    <li><a class="header-dropdown-menu-option" href="../experiences/map.php">体験談</a></li>
+                    <li><a class="header-dropdown-menu-option" href="../html/map.php">HTML</a></li>
+                    <li><a class="header-dropdown-menu-option" href="../cssBlog/map.php">CSS</a></li>
+                    <li><a class="header-dropdown-menu-option" href="../javascript-map.php">JavaScript</a></li>
+                    <li><a class="header-dropdown-menu-option" href="../php/map.html">PHP</a></li>
+                    <li><a class="header-dropdown-menu-option" href="../it/map.php">IT</a></li>
                   </ul>
                 </li>
-                <li class="header-option"><a href="../portfolio.html">Portfolio</a></li>
-                <li class="header-option"><a  href="../contact-form.html">Contact</a></li>
+                <li class="header-option"><a href="../portfolio.php">Portfolio</a></li>
+                <li class="header-option"><a  href="../contact-form.php">Contact</a></li>
             </ul>
           </nav>
         </div>

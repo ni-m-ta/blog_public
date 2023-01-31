@@ -1,7 +1,6 @@
 <?php
 $title = '【Ubuntu 20.04】Chromeのスクロール遅い問題を簡単に解決';
 $description = 'バックエンジニアのNiTaです!今回はUbuntu上で使うChromeのスクロール遅い問題を解決しましょう!';
-$keywords = 'NiTa, nita, にさとたつや, ubuntu, chrome, スクロール';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/it/ubuntuScrollChrome.css">
@@ -123,7 +122,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

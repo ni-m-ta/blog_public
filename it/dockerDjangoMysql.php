@@ -1,7 +1,6 @@
 <?php
 $title = '【Ubuntu 22.04】How to write docker compose files to use Django & Mysql';
 $description = 'Today, I will introduce how to use Docker with Django and Mysql, this page will help you!';
-$keywords = 'NiTa, nita, Linux, Ubuntu-22.04, Ubuntu, Docker, dockercompose, Django, Mysql';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/dockerDjangoMysql.css">
@@ -177,7 +176,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

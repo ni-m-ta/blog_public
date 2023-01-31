@@ -1,7 +1,6 @@
 <?php
 $title = '【Ubuntu 22.04】How to use Docker and Git to develop apps locally';
 $description = 'Today, I will introduce how to use Docker and Git to develop apps locally, this page will be help you!';
-$keywords = 'NiTa, nita, Linux, Ubuntu-22.04, Ubuntu, Docker, Git';
 include '../templates/head.php';
 ?>
 <link rel="stylesheet" href="../css/dockerGitLocalEnvironment.css">
@@ -176,7 +175,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

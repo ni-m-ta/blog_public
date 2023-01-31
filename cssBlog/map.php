@@ -1,7 +1,6 @@
 <?php
 $title = 'CSS Blogs';
 $description = 'エンジニアのNiTaです!どうぞよろしくお願いいたします!';
-$keywords = 'Nita nita 似里達哉　フロントエンド';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/css/map.css">
@@ -30,7 +29,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

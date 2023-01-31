@@ -15,7 +15,6 @@ include '../templates/head.php';
             <article>
               <div class="child-container">
                   <a class="date">2022/5/7</a>
-                  <a class="english" href="css-blog-elementsPosition-en.html">For English Ver.</a>
                   <h2 class="main-title">【アメリカ留学】めんどくさいビザの申請やってみた</h2>
                   <div class="main-img"><img src="../img/others-blog-visaApplication/others-blog-visaApplication1.jpg"></div>
                   <div class="main-start-explanation">
@@ -118,7 +117,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

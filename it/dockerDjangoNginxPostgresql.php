@@ -1,7 +1,6 @@
 <?php
 $title = 'Docker、Django、Nginx、PostgreSQLを用いてWebサイト制作!';
 $description = '学生エンジニアのnitaです!今回はDockerを用いてWebサイトを制作しましょう!';
-$keywords = 'NiTa, nita, にさとたつや, docker, django, nginx, postgresql, web, サイト';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/dockerDjangoNginxPostgresql.css">
@@ -16,7 +15,6 @@ include '../templates/head.php';
             <article>
               <div class="child-container">
                   <a class="date">2022/11/23</a>
-                  <a class="english" href="css-blog-elementsPosition-en.html">For English Ver.</a>
                   <h2 class="main-title"></h2>
                   <div class="main-img"><img src="../img/main1.png">Docker、Django、Nginx、PostgreSQLを用いてWebサイト制作!</div>
                   <div class="main-start-explanation">
@@ -284,7 +282,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

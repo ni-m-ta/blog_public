@@ -1,7 +1,6 @@
 <?php
 $title = '【初心者向け】コピペOK!HTMLテンプレート公開・解説';
 $description = '今回は初心者向けにHTMLのテンプレートを公開&解説をいたします。Progateなどのプログラミング講座を終えたばかりの方で、これから自分の力でサイトを完成させようと奮闘する方必見です。';
-$keywords = 'プログラミング, HTML, テンプレート, 初心者';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/html/base.css">
@@ -17,10 +16,10 @@ include '../templates/head.php';
               <div class="child-container">
                   <p class="date">2022/3/31</p>
                   <h2 class="main-title">【初心者向け】コピペOK!HTMLひな形公開・解説</h2>
-                  <div class="main-img"><img src="img\myBlog_html_base.jpg"></div>
+                  <div class="main-img"><img src="../img/myBlog_html_base.jpg"></div>
                   <div class="main-start-explanation">
                     <div class="face-icon">
-                      <img src="img/me2.PNG">
+                      <img src="../img/me2.PNG">
                     </div>
                     <div class="chat">新規ページの作成は最初からつくるよりもひな形を用意したほうが絶対楽！
                                       <br>そこで今回はHTMLのひな型を用意しました!
@@ -221,7 +220,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

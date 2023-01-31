@@ -1,7 +1,6 @@
 <?php
 $title = '【【Ubuntu-22.04】How to change brightness ~BrightnessController~';
 $description = 'Today, I will introduce how to change brightness in Ubuntu 22.04. If you are looking for how to fix brightness controller, this page will be help you!';
-$keywords = 'NiTa, nita, Linux, Ubuntu, brightness 明るさ';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/ubuntuBrightness-en.css">
@@ -112,7 +111,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>

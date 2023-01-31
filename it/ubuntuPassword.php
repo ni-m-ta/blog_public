@@ -1,7 +1,6 @@
 <?php
 $title = '【初心者向け】意外と簡単!LinuxのUbuntuのパスワードリセット解説';
 $description = 'ここではUbuntuのパスワードのリセットについて解説を行います。2分もあれば余裕で終わる簡単な作業を丁寧に解説していきます!';
-$keywords = 'NiTa, nita, にさとたつや, Linux, Ubuntu, パスワード';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/it/ubuntuPassword.css">
@@ -102,7 +101,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>
