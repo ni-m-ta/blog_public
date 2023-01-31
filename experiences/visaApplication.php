@@ -1,60 +1,12 @@
-<!DOCTYPE html>
- <html lang="ja">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSPKVQ1899"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TSPKVQ1899');
-</script>
-   <meta charset="UTF-8">
-   <title>【アメリカ留学】めんどくさいビザの申請やってみた</title>
-   <meta name="description" content="学生エンジニアのnitaです!今回はアメリカの留学準備に関するブログです!なかなかめんどくさいビザの申請について解説&感想(愚痴)を書いていこうと思います。">
-   <meta name="keywords" content="NiTa, nita, にさとたつや, アメリカ, 留学, ビザ, アメリカ大使館">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="img/iconForTab.png">
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/contents.css">
-   <link rel="stylesheet" href="css/others-blog-visaApplication.css">
-   <script src="https://kit.fontawesome.com/00f67a9916.js" crossorigin="anonymous"></script>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3886315435685807"
-     crossorigin="anonymous"></script>
+<?php
+$title = '【アメリカ留学】めんどくさいビザの申請やってみた';
+$description = 'エンジニアのNiTaです!今回はアメリカの留学準備に関するブログです!なかなかめんどくさいビザの申請について解説&感想(愚痴)を書いていこうと思います。';
+include '../templates/head.php';
+?>
+   <link rel="stylesheet" href="../css/experiences/visaApplication.css">
   </head>
   <body>
-    <header id="header">
-      <div class="header-logo-snsIcons">
-        <a href="index.html"><img class="header-logo-img" src="img/myBlog_header_logo3.png"></a>
-         <div class="header-snsIcons">
-           <a href="https://twitter.com/TATSUYA_NISATO"><i class="fa-brands fa-twitter"></i></a>
-           <a href="https://www.facebook.com/profile.php?id=100049389249541"><i class="fa-brands fa-facebook-f"></i></a>
-           <a href="https://github.com/ni-m-ta"><i class="fa-brands fa-github"></i></a>
-           <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-        <div class="container">
-          <nav>
-            <ul class="header-options">
-                <li class="header-option"><a href="index.html">HOME</a></li>
-                <li class="header-option"><a href="profile.html">Profile</a></li>
-                <li class="header-option header-option-parent">Blog
-                  <ul class="header-dropdown-menu">
-                    <li><a class="header-dropdown-menu-option" href="experiences-map.html">体験談</a></li>
-                    <li><a class="header-dropdown-menu-option" href="html-map.html">HTML</a></li>
-                    <li><a class="header-dropdown-menu-option" href="css-map.html">CSS</a></li>
-                    <li><a class="header-dropdown-menu-option" href="javascript-map.html">JavaScript</a></li>
-                    <li><a class="header-dropdown-menu-option" href="php-map.html">PHP</a></li>
-                    <li><a class="header-dropdown-menu-option" href="it.html">IT</a></li>
-                  </ul>
-                </li>
-                <li class="header-option"><a href="portfolio.html">Portfolio</a></li>
-                <li class="header-option"><a  href="contact-form.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
+  <?php include('../templates/header.php');?>
     <h1 class="title">Study Abroad Blog</h1>
     <div class="container">
       <div class="contents">
@@ -65,10 +17,10 @@
                   <a class="date">2022/5/7</a>
                   <a class="english" href="css-blog-elementsPosition-en.html">For English Ver.</a>
                   <h2 class="main-title">【アメリカ留学】めんどくさいビザの申請やってみた</h2>
-                  <div class="main-img"><img src="img/others-blog-visaApplication/others-blog-visaApplication1.jpg"></div>
+                  <div class="main-img"><img src="../img/others-blog-visaApplication/others-blog-visaApplication1.jpg"></div>
                   <div class="main-start-explanation">
                     <div class="face-icon">
-                      <img src="img/me2.PNG">
+                      <img src="../img/me2.PNG">
                     </div>
                     <div class="chat">アメリカの留学申請ってほんとに時間がかかりますよね...
                         <br>てことで軽く解説していこうと思います!
@@ -102,7 +54,7 @@
                         <p>僕は国際教養大学に通う、主に経済・経営学を学ぶ大学3年生です。多くの3年生は、当大学が卒業要件として課している約1年間の提携校への留学を行うことになっています。</p>
                         <p>選考の結果、カリフォルニアのサンフランシスコ郊外にある、St. Mary's College of Californiaに行くことになりました!</p>
                         <p>ちなみにこの封筒はホスト校から送られてきたものです(実感が湧いてきてテンション上がります</p>
-                        <img class="content-img" src="img/others-blog-visaApplication/others-blog-visaApplication.jpg">
+                        <img class="content-img" src="../img/others-blog-visaApplication/others-blog-visaApplication.jpg">
                     </section>
                     <section>
                         <h2 class="subcontents-title">アメリカ留学までにやること</h2>
@@ -136,9 +88,9 @@
                         <p>これがまためんどくさいです。まずこちらの<a rel="https://ceac.state.gov/genniv/">サイト</a>にアクセスします。沢山の質問に答えたり、顔写真をアップロードするのに半日ほどかかるかと思います。
                             <br>面接を希望する地域を選択し認証コードを入力したのちに「START AN APPLICATION」を選択。
                         </p>
-                        <img class="content-img" src="img/others-blog-visaApplication/others-blog-visaApplication3 (2).png">
+                        <img class="content-img" src="../img/others-blog-visaApplication/others-blog-visaApplication3 (2).png">
                         <p>その後「I agree」を選択します。その際「Application ID」を必ずひかえるようにしてください。</p>
-                        <img class="content-img" src="img/others-blog-visaApplication/others-blog-visaApplication4.png">
+                        <img class="content-img" src="../img/others-blog-visaApplication/others-blog-visaApplication4.png">
                         <p>ここから怒涛の質問ラッシュです。ファイトです。質問に答え終わると確認画面に移ります。その際PDFで保管できる資料は残しておきしょう。
                             <br>また質問に答え終えたのに確認画面に移らない場合、答えていない箇所あるいは「save」できていない質問箇所がある可能性があります。すべて「save」しておきましょう。
                         </p>
@@ -146,7 +98,7 @@
                         <p>こちらの<a src="https://cgifederal.secure.force.com/?language=Japanese&country=Japan">サイト</a>から、「new user」をクリックして手続き開始。
                             <br>最中に面接場所、面接日程、MRV(約2万円)、ビザ輸送費(必要な方のみ)を支払います。
                         </p>
-                        <img class="content-img" src="img/others-blog-visaApplication/others-blog-visaApplication5.png">
+                        <img class="content-img" src="../img/others-blog-visaApplication/others-blog-visaApplication5.png">
                         <h3 class="subcontents-subtitle">5.大使館或いは領事館での面接</h3>
                         <p>実際に米大使館或いは領事館で面接を行います。実際の様子は後日紹介します!</p>
                         <h3 class="subcontents-subtitle">6.ビザの受取</h3>
@@ -161,32 +113,10 @@
           </article>
           </div>
         </main>
-        <div class="side child-profile">
-          <div class="child-container">
-            <h4 class="child-profile-title">Profile</h4>
-            <img class="child-profile-img" src="img\me2.PNG">
-            <h4 class="child-profile-name">NiTa</h4>
-            <p class="child-profile-status">大学生</p>
-            <p class="child-profile-status">Webクリエイター</p>
-            <ul>
-              <li>文系大学生</li>
-              <li>24卒</li>
-              <li>カリフォルニア留学中</li>
-            </ul>
-          </div>
-        </div>
+        <?php include('../templates/profile.php');?>
       </div>
     </div>
-    <footer>
-      <div class="container footer-container">
-        <div class="footer-options">
-          <a class="footer-option" href="privacy-policy.html">Privacy Policy</a>
-          <a class="footer-option" href="contact-form.html">Contact Form</a>
-          <a class="footer-option" href="site-map.html">Site Map</a>
-        </div>
-        <p>&COPY; NiTa BLOG</p>
-      </div>
-    </footer>
+    <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>

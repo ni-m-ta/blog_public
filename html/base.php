@@ -1,60 +1,13 @@
-<!DOCTYPE html>
- <html lang="ja">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSPKVQ1899"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TSPKVQ1899');
-</script>
-   <meta charset="UTF-8">
-   <title>【初心者向け】コピペOK!HTMLテンプレート公開・解説</title>
-   <meta name="description" content="今回は初心者向けにHTMLのテンプレートを公開&解説をいたします。Progateなどのプログラミング講座を終えたばかりの方で、これから自分の力でサイトを完成させようと奮闘する方必見です。">
-   <meta name="keywords" content="プログラミング, HTML, テンプレート, 初心者">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" href="img/iconForTab.png">
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/contents.css">
-   <link rel="stylesheet" href="css/html-blog-base.css">
-   <script src="https://kit.fontawesome.com/00f67a9916.js" crossorigin="anonymous"></script>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3886315435685807"
-     crossorigin="anonymous"></script>
+<?php
+$title = '【初心者向け】コピペOK!HTMLテンプレート公開・解説';
+$description = '今回は初心者向けにHTMLのテンプレートを公開&解説をいたします。Progateなどのプログラミング講座を終えたばかりの方で、これから自分の力でサイトを完成させようと奮闘する方必見です。';
+$keywords = 'プログラミング, HTML, テンプレート, 初心者';
+include '../templates/head.php';
+?>
+   <link rel="stylesheet" href="../css/html/base.css">
   </head>
   <body>
-    <header id="header">
-      <div class="header-logo-snsIcons">
-        <a href="index.html"><img class="header-logo-img" src="img/myBlog_header_logo3.png"></a>
-         <div class="header-snsIcons">
-           <a href="https://twitter.com/TATSUYA_NISATO"><i class="fa-brands fa-twitter"></i></a>
-           <a href="https://www.facebook.com/profile.php?id=100049389249541"><i class="fa-brands fa-facebook-f"></i></a>
-           <a href="https://github.com/ni-m-ta"><i class="fa-brands fa-github"></i></a>
-           <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-        <div class="container">
-          <nav>
-            <ul class="header-options">
-                <li class="header-option"><a href="index.html">HOME</a></li>
-                <li class="header-option"><a href="profile.html">Profile</a></li>
-                <li class="header-option header-option-parent">Blog
-                  <ul class="header-dropdown-menu">
-                    <li><a class="header-dropdown-menu-option" href="experiences-map.html">体験談</a></li>
-                    <li><a class="header-dropdown-menu-option" href="html-map.html">HTML</a></li>
-                    <li><a class="header-dropdown-menu-option" href="css-map.html">CSS</a></li>
-                    <li><a class="header-dropdown-menu-option" href="javascript-map.html">JavaScript</a></li>
-                    <li><a class="header-dropdown-menu-option" href="php-map.html">PHP</a></li>
-                    <li><a class="header-dropdown-menu-option" href="it.html">IT</a></li>
-                  </ul>
-                </li>
-                <li class="header-option"><a href="portfolio.html">Portfolio</a></li>
-                <li class="header-option"><a  href="contact-form.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
+  <?php include('../templates/header.php');?>
     <h1 class="title">HTML Blog</h1>
     <div class="container">
       <div class="contents">
@@ -183,7 +136,7 @@
                         <br>relの部分にはリンクの種類、hrefの部分には該当するURLやファイルのパスが記載されます。
                         <br>iconの場合hrefに画像のパスを指定すると、指定された画像がタブ部分の絵柄として表示されます。
                       </p>
-                      <img src="img/タブ画像解説_screenshot.png">
+                      <img src="../img/タブ画像解説_screenshot.png">
                       <p class="codepen" data-height="130" data-default-tab="html" data-slug-hash="BaJwaEj" data-user="ni-m-ta" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                         <span>See the Pen <a href="https://codepen.io/ni-m-ta/pen/BaJwaEj">
                         Untitled</a> by Tatsuya Nisato (<a href="https://codepen.io/ni-m-ta">@ni-m-ta</a>)
@@ -263,32 +216,10 @@
             </article>
           </div>
         </main>
-        <div class="side child-profile">
-          <div class="child-container">
-            <h4 class="child-profile-title">Profile</h4>
-            <img class="child-profile-img" src="img\me2.PNG">
-            <h4 class="child-profile-name">NiTa</h4>
-            <p class="child-profile-status">大学生</p>
-            <p class="child-profile-status">Webクリエイター</p>
-            <ul>
-              <li>文系大学生</li>
-              <li>24卒</li>
-              <li>カリフォルニア留学中</li>
-            </ul>
-          </div>
-        </div>
+        <?php include('../templates/profile.php');?>
       </div>
     </div>
-    <footer>
-      <div class="container footer-container">
-        <div class="footer-options">
-          <a class="footer-option" href="privacy-policy.html">Privacy Policy</a>
-          <a class="footer-option" href="contact-form.html">Contact Form</a>
-          <a class="footer-option" href="site-map.html">Site Map</a>
-        </div>
-        <p>&COPY; NiTa BLOG</p>
-      </div>
-    </footer>
+    <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
