@@ -4,7 +4,6 @@ $description = 'みなさんこんにちは、今回は備忘録を兼ねて新�
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/it/ubuntuInstallandSetting.css">
-
   </head>
   <body>
   <?php include('../templates/header.php');?>
