@@ -14,36 +14,29 @@ include '../templates/head.php';
           <div class="main">
             <article>
               <div class="child-container">
-                <div class="main-container">
-                  <a class="blog ubuntuScrollChrome" href="it-blog-ubuntuScrollChrome.html">
-                    <p class="blog-subtitle">【Ubuntu20.04】</p>
-                    <p class="blog-title">Chromeのスクロールスピード<br>簡単に修正!</p>
-                  </a>
-                  <a class="blog ubuntuInstall" href="it-blog-ubuntuInstall.html">
-                    <p class="blog-subtitle">【Ubuntu】</p>
-                    <p class="blog-title">IT初心者がUbuntu<br>インストールしてみた</p>
-                  </a>
-                  <a class="blog ubuntuPassword" href="it-blog-UbuntuPassword.html">
-                    <p class="blog-subtitle">【Ubuntu】</p>
-                    <p class="blog-title">Ubuntuのパスワード<br>簡単にリセット!</p>
-                  </a>  
-                  <a class="blog ubuntuInstallandSetting" href="it-blog-ubuntuInstallandSetting.html">
-                    <p class="blog-subtitle">【Ubuntu-22.04】</p>
-                    <p class="blog-title">OS無しデスクトップ環境構築!</p>
-                  </a>
-                  <a class="blog ubuntuBrightness-en" href="it-blog-ubuntuBrightness-en.html">
-                    <p class="blog-subtitle">【Ubuntu-22.04】</p>
-                    <p class="blog-title">How to change brightness<br>~BrightnessController</p>
-                  </a>
-                  <a class="blog dockerGitLocalEn" href="it-blog-dockerGitLocalEnvironment.html">
-                    <p class="blog-subtitle">【Ubuntu-22.04】</p>
-                    <p class="blog-title">How to use Docker and Git<br>By using Docker Compose</p>
-                  </a>
-                  <a class="blog dockerDjangoMysql" href="it-blog-dockerDjangoMysql.html">
-                    <p class="blog-subtitle">【Ubuntu-22.04】</p>
-                    <p class="blog-title">How 2 create docker compose<br>to use Django & Mysql</p>
-                  </a>
-                </div>           
+                <div class="recent-blogs">
+                  <div class="recent-blog">
+                  <a href="dockerDjangoMysql.php">【Ubuntu-22.04】How to create docker compose to use Django & Mysql</a>
+                  </div>
+                  <div class="recent-blog">
+                  <a href="dockerGitLocalEnvironment.php">【Ubuntu-22.04】How to use Docker and Git by using Docker Compose</a>
+                  </div>
+                  <div class="recent-blog">
+                  <a href="ubuntuBrightness-en.php">【Ubuntu-22.04】How to change brightness ~BrightnessController~</a>
+                  </div>
+                  <div class="recent-blog">
+                  <a href="ubuntuInstallandSetting.php">【Ubuntu-22.04】OS無しデスクトップ環境構築!</a>
+                  </div>
+                  <div class="recent-blog">
+                  <a href="ubuntuPassword.php">【Ubuntu】Ubuntuのパスワード簡単にリセット!</a>
+                  </div>
+                  <div class="recent-blog">
+                  <a href="ubuntuInstall.php">【Ubuntu】IT初心者がUbuntuインストールしてみた</a>
+                  </div>
+                  <div class="recent-blog">
+                  <a href="ubuntuScrollChrome.php">【Ubuntu20.04】Chromeのスクロールスピード簡単に修正!</a>
+                  </div>   
+                </div>        
               </div>
             </article>
           </div> 

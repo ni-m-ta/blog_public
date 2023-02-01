@@ -3,7 +3,7 @@ $title = 'PHP Blog';
 $description = 'バックエンドエンジニアのNiTaです!どうぞよろしくお願いいたします!';
 include '../templates/head.php';
 ?>
-   <link rel="stylesheet" href="../css/php.css">
+   <link rel="stylesheet" href="../css/php/map.css">
   </head>
   <body>
   <?php include('../templates/header.php');?>
