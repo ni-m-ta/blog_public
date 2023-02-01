@@ -1,7 +1,7 @@
 <?php
 $title = 'NiTa Blog';
 $description = 'バックエンジニアのNiTaです!どうぞよろしくお願いします!';
-include 'templates/head.php';
+include 'templates/head_root.php';
 ?>
    <link rel="stylesheet" href="css/index.css">
   </head>
@@ -29,7 +29,7 @@ include 'templates/head.php';
                   </p>
                   <p>趣味は昼寝や美味しいものを食べること、また猫と戯れること</p>
                   <p>ポケモンはいちばんお気に入りのゲーム。好きなポケモンはジュペッタ</p>
-                  <p>猫の名前はぶんちゃん</p>
+                  <p>猫の名前はぶん</p>
                 </div>
               </div>
           </div>
@@ -50,11 +50,9 @@ include 'templates/head.php';
         <div class="recent-blogs">
           <div class="container">
             <h2>Recent Blogs</h2>
-            <!--
             <div class="recent-blog">
               <a href="it/rdp.php">【リモートデスクトップ】Mac上でWindowsのデスクトップをリモートで操作</a>
             </div>
-            -->
             <div class="recent-blog">
               <a href="it/dockerDjangoMysql.php">【Ubuntu 22.04】How to write docker compose files to use Django & Mysql</a>
             </div>

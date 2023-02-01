@@ -5,13 +5,12 @@
            <a href="https://twitter.com/TATSUYA_NISATO"><i class="fa-brands fa-twitter"></i></a>
            <a href="https://www.facebook.com/profile.php?id=100049389249541"><i class="fa-brands fa-facebook-f"></i></a>
            <a href="https://github.com/ni-m-ta"><i class="fa-brands fa-github"></i></a>
-           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
         <div class="container">
           <nav>
             <ul class="header-options">
-                <li class="header-option"><a href="index.html">HOME</a></li>
+                <li class="header-option"><a href="index.php">HOME</a></li>
                 <li class="header-option"><a href="profile.php">Profile</a></li>
                 <li class="header-option header-option-parent">Blog
                   <ul class="header-dropdown-menu">

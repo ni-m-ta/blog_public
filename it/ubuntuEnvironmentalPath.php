@@ -3,7 +3,7 @@ $title = '【Ubuntu20.04】意外と簡単!環境変数パスを通して仮想�
 $description = 'ここでは環境パスの通し方、もとい.bashrcと.bash_profile(.profile)について説明していきます。';
 include '../templates/head.php';
 ?>
-   <link rel="stylesheet" href="../css/ubuntuEnvironmentPath.css">
+   <link rel="stylesheet" href="../css/it/ubuntuEnvironmentPath.css">
   </head>
   <body>
   <?php include('../templates/header.php');?>

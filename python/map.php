@@ -3,10 +3,11 @@ $title = 'Python Blog';
 $description = 'バックエンジニアのNiTaです!どうぞよろしくお願いします!';
 include '../templates/head.php';
 ?>
+   <link rel="stylesheet" href="../css/python/python.css">
   </head>
   <body>
   <?php include('../templates/header.php');?>
-    <h1 class="title">JavaScript Blogs</h1>
+    <h1 class="title">Python Blogs</h1>
     <div class="container">
       <div class="contents">
         <main>

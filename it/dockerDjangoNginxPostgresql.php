@@ -3,7 +3,7 @@ $title = 'Docker、Django、Nginx、PostgreSQLを用いてWebサイト制作!';
 $description = '学生エンジニアのnitaです!今回はDockerを用いてWebサイトを制作しましょう!';
 include '../templates/head.php';
 ?>
-   <link rel="stylesheet" href="../css/dockerDjangoNginxPostgresql.css">
+   <link rel="stylesheet" href="../css/it/dockerDjangoNginxPostgresql.css">
   </head>
   <body>
   <?php include('../templates/header.php');?>

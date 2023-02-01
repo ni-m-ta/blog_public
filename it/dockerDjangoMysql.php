@@ -3,7 +3,7 @@ $title = '【Ubuntu 22.04】How to write docker compose files to use Django & My
 $description = 'Today, I will introduce how to use Docker with Django and Mysql, this page will help you!';
 include '../templates/head.php';
 ?>
-   <link rel="stylesheet" href="../css/dockerDjangoMysql.css">
+   <link rel="stylesheet" href="../css/it/dockerDjangoMysql.css">
   </head>
   <body>
   <?php include('../templates/header.php');?>

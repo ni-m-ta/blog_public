@@ -3,7 +3,7 @@ $title = '【初心者向け】意外と簡単!LinuxのUbuntuインストール�
 $description = 'ここでは初心者向けにUbuntuのインストール作業について解説を行います。仮想環境を用いたUbuntuのインストール手順を一つ一つ解説していますので簡単にインストールできます!';
 include '../templates/head.php';
 ?>
-   <link rel="stylesheet" href="../css/ubuntuInstall.css">
+   <link rel="stylesheet" href="../css/it/ubuntuInstall.css">
   </head>
   <body>
   <?php include('../templates/header.php');?>

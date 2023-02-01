@@ -3,7 +3,7 @@ $title = '【Ubuntu 22.04】How to use Docker and Git to develop apps locally';
 $description = 'Today, I will introduce how to use Docker and Git to develop apps locally, this page will be help you!';
 include '../templates/head.php';
 ?>
-<link rel="stylesheet" href="../css/dockerGitLocalEnvironment.css">
+<link rel="stylesheet" href="../css/it/dockerGitLocalEnvironment.css">
   </head>
   <body>
   <?php include('../templates/header.php');?>

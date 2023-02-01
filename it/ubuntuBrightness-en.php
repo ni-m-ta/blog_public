@@ -3,7 +3,7 @@ $title = '【【Ubuntu-22.04】How to change brightness ~BrightnessController~';
 $description = 'Today, I will introduce how to change brightness in Ubuntu 22.04. If you are looking for how to fix brightness controller, this page will be help you!';
 include '../templates/head.php';
 ?>
-   <link rel="stylesheet" href="../css/ubuntuBrightness-en.css">
+   <link rel="stylesheet" href="../css/it/ubuntuBrightness-en.css">
   </head>
   <body>
   <?php include('../templates/header.php');?>
