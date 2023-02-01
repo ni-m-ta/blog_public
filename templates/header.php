@@ -1,6 +1,6 @@
 <header id="header">
       <div class="header-logo-snsIcons">
-        <a href="../index.html"><img class="header-logo-img" src="../img/myBlog_header_logo3.png"></a>
+        <a href="../index.php"><img class="header-logo-img" src="../img/myBlog_header_logo3.png"></a>
          <div class="header-snsIcons">
            <a href="https://twitter.com/TATSUYA_NISATO"><i class="fa-brands fa-twitter"></i></a>
            <a href="https://www.facebook.com/profile.php?id=100049389249541"><i class="fa-brands fa-facebook-f"></i></a>

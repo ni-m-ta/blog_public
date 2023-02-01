@@ -1,60 +1,12 @@
-<!DOCTYPE html>
- <html lang="ja">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSPKVQ1899"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TSPKVQ1899');
-</script>
-   <meta charset="UTF-8">
-   <title>NiTa BLOG</title>
-   <meta name="description" content="文系大学生が独学でプログラミングを学び、エンジニア道を突き進む。">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="keywords" content="NiTa, nita, にさとたつや, 似里達哉, プログラミング, エンジニア, 秋田, 岩手">
-   <link rel="icon" href="img/iconForTab.png">
-   <link rel="stylesheet" href="slick/slick.css"/>
-   <link rel="stylesheet" href="slick/slick-theme.css"/>
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylsheet"  href="css/contents.css">
+<?php
+$title = 'NiTa Blog';
+$description = 'バックエンジニアのNiTaです!どうぞよろしくお願いします!';
+include 'templates/head.php';
+?>
    <link rel="stylesheet" href="css/index.css">
-   <script src="https://kit.fontawesome.com/00f67a9916.js" crossorigin="anonymous"></script>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3886315435685807"
-     crossorigin="anonymous"></script>
   </head>
   <body>
-    <header id="header">
-      <div class="header-logo-snsIcons">
-          <a href="index.html"><img class="header-logo-img" src="img/myBlog_header_logo3.png"></a>
-         <div class="header-snsIcons">
-           <a href="https://twitter.com/TATSUYA_NISATO"><i class="fa-brands fa-twitter"></i></a>
-           <a href="https://www.facebook.com/profile.php?id=100049389249541"><i class="fa-brands fa-facebook-f"></i></a>
-           <a href="https://github.com/ni-m-ta"><i class="fa-brands fa-github"></i></a>
-           <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-        <div class="container">
-          <ul class="header-options">
-              <li class="header-option"><a href="index.html">HOME</a></li>
-              <li class="header-option"><a href="profile.html">Profile</a></li>
-              <li class="header-option header-option-parent">Blog
-                <ul class="header-dropdown-menu">
-                  <li><a class="header-dropdown-menu-option" href="experiences-map.html">体験談</a></li>
-                  <li><a class="header-dropdown-menu-option" href="html-map.html">HTML</a></li>
-                  <li><a class="header-dropdown-menu-option" href="css-map.html">CSS</a></li>
-                  <li><a class="header-dropdown-menu-option" href="javascript-map.html">JavaScript</a></li>
-                  <li><a class="header-dropdown-menu-option" href="php-map.html">PHP</a></li>
-                  <li><a class="header-dropdown-menu-option" href="it.html">IT</a></li>
-                </ul>
-              </li>
-              <li class="header-option"><a href="portfolio.html">Portfolio</a></li>
-              <li class="header-option"><a  href="contact-form.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+  <?php include('templates/header_root.php');?>
     <div class="top-slides">
       <img class="slide" src="img/myBlog_top_programming1.jpg">
       <img class="slide" src="img/myBlog_top_programming2.jpg">
@@ -134,16 +86,7 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container footer-container">
-        <div class="footer-options">
-          <a class="footer-option" href="privacy-policy.html">Privacy Policy</a>
-          <a class="footer-option" href="contact-form.html">Contact Form</a>
-          <a class="footer-option" href="site-map.html">Site Map</a>
-        </div>
-        <p>&COPY; NiTa BLOG</p>
-      </div>
-    </footer>
+    <?php include('templates/footer_root.php');?>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/slides.js"></script>
