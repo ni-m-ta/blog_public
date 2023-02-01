@@ -1,14 +1,12 @@
 <?php
 $title = 'Site Map';
 $description = 'バックエンドエンジニアのNiTaです!';
-include 'templates/head.php';
+include 'templates/head_root.php';
 ?>
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/contents.css">
    <link rel="stylesheet" href="css/site-map.css">
   </head>
   <body>
-  <?php include('templates/header.php');?>
+  <?php include('templates/header_root.php');?>
     <h1 class="title">Site Map</h1>
     <div class="container">
       <div class="contents">
@@ -28,10 +26,10 @@ include 'templates/head.php';
           </article>
           </div> 
         </main>
-        <?php include('templates/profile.php');?>
+        <?php include('templates/profile_root.php');?>
       </div>
     </div>
-    <?php include('templates/footer.php');?>
+    <?php include('templates/footer_root.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
