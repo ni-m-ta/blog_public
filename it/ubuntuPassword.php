@@ -17,6 +17,8 @@ include '../templates/head.php';
               <div class="child-container">
                   <a class="date">2022/4/19</a>
                   <h2 class="main-title">意外と簡単!LinuxのUbuntuのパスワードリセット解説</h2>
+                  <p>Now preparing</p>
+                  <!--
                   <div class="main-img"><img src="../img/main1.png"></div>
                   <div class="main-start-explanation">
                     <div class="face-icon">
@@ -93,6 +95,7 @@ include '../templates/head.php';
                     </section>
                   </div>
               </div>
+-->
           </article>
           </div>
         </main>

@@ -14,12 +14,11 @@ include '../templates/head.php';
           <div class="main">
             <article>
               <div class="child-container">
-                <div class="main-container">
-                  <a class="blog css-elementsPosition" href="elementsPosition.php">
-                    <p class="blog-subtitle">初心者向け</p>
-                    <p class="blog-title">左右中央寄せを完璧に!<br>text-alignとmargin</p>
-                  </a>  
-                </div>           
+                <div class="recent-blogs">
+                  <div class="recent-blog">
+                  <a href="elementPosition.php">【初心者向け】左右中央寄せを完璧に!text-align & margin</a>
+                  </div>   
+                </div>            
               </div>
             </article>
           </div> 

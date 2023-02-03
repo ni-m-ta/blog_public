@@ -14,12 +14,11 @@ include '../templates/head.php';
           <div class="main">
             <article>
               <div class="child-container">
-                <div class="main-container">
-                  <a class="blog html-base" href="html-blog-base.html">
-                    <p class="blog-subtitle">初心者向け</p>
-                    <p class="blog-title">コピペOK!<br>HTMLひな形公開!</p>
-                  </a>
-                </div>           
+              <div class="recent-blogs">
+                  <div class="recent-blog">
+                    <a href="base.php">【初心者向け】htmlテンプレート公開!</a>
+                  </div>   
+                </div>        
               </div>
             </article>
           </div>

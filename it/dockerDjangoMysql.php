@@ -19,7 +19,7 @@ include '../templates/head.php';
                   <div class="main-img"><img src="../img/main1.png"></div>
                   <div class="main-start-explanation">
                     <div class="face-icon">
-                      <img src="..img/me2.PNG">
+                      <img src="../img/me2.PNG">
                     </div>
                     <div class="chat">Today's topic is docker with Django and Mysql.
                         <br>This article is based on <a href="https://docs.docker.com/samples/django/">docker.docs</a> & <a href="https://book-reviews.blog/build-django-mysql-environment-with-docker-compose/">Motoaki Shibagaki's site.</a>
