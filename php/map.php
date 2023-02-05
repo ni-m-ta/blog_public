@@ -14,9 +14,7 @@ include '../templates/head.php';
           <div class="main">
             <article>
               <div class="child-container">
-                <div class="main-container">
-                  <p>Now preparing...</p>
-                </div>           
+                <p>Now preparing...</p>          
               </div>
             </article>
           </div> 

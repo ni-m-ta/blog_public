@@ -1,6 +1,6 @@
 <?php
 $title = 'Python Blog';
-$description = 'バックエンジニアのNiTaです!どうぞよろしくお願いします!';
+$description = 'バックエンドジニアのNiTaです!どうぞよろしくお願いします!';
 include '../templates/head.php';
 ?>
    <link rel="stylesheet" href="../css/python/python.css">
@@ -14,9 +14,7 @@ include '../templates/head.php';
           <div class="main">
             <article>
               <div class="child-container">
-                <div class="main-container">
-                  <p>Now preparing...</p>
-                </div>           
+                <p>Now preparing...</p>           
               </div>
             </article>
           </div> 
@@ -26,7 +24,7 @@ include '../templates/head.php';
     </div>
     <?php include('../templates/footer.php');?>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
  </html>
