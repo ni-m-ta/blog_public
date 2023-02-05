@@ -16,7 +16,7 @@ include '../templates/head.php';
               <div class="child-container">
               <div class="recent-blogs">
                   <div class="recent-blog">
-                  <a href="visaApplication.php">【アメリカ留学】めんどくさいビザの申請やってみた</a>
+                  <a href="visaApplication.php">【アメリカ留学】めんどくさいビザの申請やってみた！</a>
                   </div>   
                 </div>          
               </div>
