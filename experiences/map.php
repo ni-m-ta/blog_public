@@ -14,12 +14,11 @@ include '../templates/head.php';
           <div class="main">
             <article>
               <div class="child-container">
-                <div class="main-container">
-                  <a class="blog visaApplication" href="others-blog-visaApplication.html">
-                    <p class="blog-subtitle">【アメリカ留学】</p>
-                    <p class="blog-title">めんどくさい<br>ビザの申請やってみた</p>
-                  </a>
-                </div>           
+              <div class="recent-blogs">
+                  <div class="recent-blog">
+                  <a href="visaApplication.php">【アメリカ留学】めんどくさいビザの申請やってみた</a>
+                  </div>   
+                </div>          
               </div>
             </article>
           </div> 

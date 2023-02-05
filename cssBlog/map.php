@@ -16,7 +16,7 @@ include '../templates/head.php';
               <div class="child-container">
                 <div class="recent-blogs">
                   <div class="recent-blog">
-                  <a href="elementPosition.php">【初心者向け】左右中央寄せを完璧に!text-align & margin</a>
+                  <a href="elementsPosition.php">【初心者向け】左右中央寄せを完璧に!text-align & margin</a>
                   </div>   
                 </div>            
               </div>
