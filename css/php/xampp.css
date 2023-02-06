@@ -1,0 +1,25 @@
+.contents{
+    display: grid;
+    grid-template-columns: 70% 27%;
+    grid-template-rows: 450px 4500px;
+    column-gap: 3%;
+    padding-bottom: 50px;
+    font-size: 18px;
+    height: auto;
+  }
+
+@media screen and (max-width: 960px) {
+  /* 960px以下に適用されるCSS（タブレット用） */
+}
+
+@media screen and (max-width: 560px){
+  /* 560px以下に適用されるCSS（スマートフォン用） */
+  .contents{
+    display: grid;
+    grid-template-columns: 97%;
+    row-gap: 20px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    height: auto;
+  }
+}

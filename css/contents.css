@@ -298,6 +298,11 @@ ul{
     .recent-blog a:link, a:visited, a:hover, a:active{
         color: white;
     }
+  
+  .img-size{
+    width: 100%;
+    height: auto;
+  }
 
 /*////////////////////////////////////////////////////////////////////////////
 /////                     responsive                                    /////

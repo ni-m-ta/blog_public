@@ -1,5 +1,9 @@
+main{
+    height: auto;
+}
+
 .recent-blogs{
-    height: 350px;
+    height: 400px;
     width: 100%;
     text-align: center;
     color: gray;
