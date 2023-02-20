@@ -51,7 +51,7 @@ include 'templates/head_root.php';
           <div class="container">
             <h2>Recent Blogs</h2>
             <div class="recent-blog">
-              <a href="xampp.php">【XAMPP】ローカル環境においてブラウザ上でPHPファイルを確認したい</a>
+              <a href="php/xampp.php">【XAMPP】ローカル環境においてブラウザ上でPHPファイルを確認したい</a>
             </div>
             <!--
             <div class="recent-blog">
