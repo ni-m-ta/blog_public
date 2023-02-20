@@ -53,9 +53,11 @@ include 'templates/head_root.php';
             <div class="recent-blog">
               <a href="xampp.php">【XAMPP】ローカル環境においてブラウザ上でPHPファイルを確認したい</a>
             </div>
+            <!--
             <div class="recent-blog">
               <a href="it/rdp.php">【リモートデスクトップ】Mac上でWindowsのデスクトップをリモートで操作</a>
             </div>
+            -->
             <div class="recent-blog">
               <a href="it/dockerDjangoMysql.php">【Ubuntu 22.04】How to write docker compose files to use Django & Mysql</a>
             </div>
