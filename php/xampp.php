@@ -54,7 +54,7 @@ include '../templates/head.php';
                         <p>XAMPPはApache、MariaDB、PHP、Perlを含むクロスプラットフォーム(LinuxやWindows、MacOSで使用可能)です</p>
                     </section>
                     <section>
-                        <h2 class="subcontents-title">ローカル環境のブラウザ上でPHPファイルを確認するためのXAMPPの使い方</h2>  
+                        <h2 class="subcontents-title">ローカル環境でのXAMPPの使い方</h2>  
                         <h3 class="subcontents-subtitle">XAMPPをダウンロード</h3>
                             <p>まず<a href="https://www.apachefriends.org/jp/download.html">こちら</a>から自分のPCのOSと入れたいバージョンに合うものをダウンロードします。
                         <h3 class="subcontents-subtitle">XAMPPをインストール</h3>
