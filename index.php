@@ -51,6 +51,9 @@ include 'templates/head_root.php';
           <div class="container">
             <h2>Recent Blogs</h2>
             <div class="recent-blog">
+              <a href="it/howToUseGit.php">【Git Cheatsheet】業務で活躍Gitコマンド集</a>
+            </div>
+            <div class="recent-blog">
               <a href="php/xampp.php">【XAMPP】ローカル環境においてブラウザ上でPHPファイルを確認したい</a>
             </div>
             <!--

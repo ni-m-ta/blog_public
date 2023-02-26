@@ -16,6 +16,9 @@ include '../templates/head.php';
               <div class="child-container">
                 <div class="recent-blogs">
                   <div class="recent-blog">
+                  <a href="howToUseGit.php">【Git Cheatsheet】業務で活躍Gitコマンド集</a>
+                  </div>
+                  <div class="recent-blog">
                   <a href="dockerDjangoMysql.php">【Ubuntu-22.04】How to create docker compose to use Django & Mysql</a>
                   </div>
                   <div class="recent-blog">
