@@ -16,7 +16,7 @@ include '../templates/head.php';
               <div class="child-container">
               <div class="recent-blogs">
                   <div class="recent-blog">
-                    <a href="base.php">【初心者向け】htmlテンプレート公開!</a>
+                    <a class="blog" href="base.php">【初心者向け】htmlテンプレート公開!</a>
                   </div>   
                 </div>        
               </div>

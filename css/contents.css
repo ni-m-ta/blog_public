@@ -295,9 +295,13 @@ ul{
         text-align: left;
     }
 
-    .recent-blog a:link, a:visited, a:hover, a:active{
-        color: white;
+    .url{
+      color: rgb(65, 65, 65);
     }
+
+    .blog{
+      color: white;
+  }
   
   .img-size{
     width: 100%;
@@ -516,9 +520,5 @@ ul{
       text-align: left;
   }
 
-  .recent-blog a:link, a:visited, a:hover, a:active{
-      color: white;
-  }
-          
-  }
+}
   

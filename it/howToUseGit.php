@@ -83,8 +83,8 @@ include '../templates/head.php';
                     </section>
                     <section>
                     <h2 class="subcontents-title">まとめ</h2>
-                        <p>今回の記事を作成するにあたり、<a href="https://qiita.com/chihiro/items/5dd671aa6f1c332986a7">【git】マージしたけどやっぱりやめたい時のやり方4種類</a>を参考にいたしました。
-                        <br>またGitの仕組みについてより詳しく知りたい方はこちらの記事<a href="https://softwarenote.info/p2113/">Git ワークフロー（ブランチモデル）とその手順</a>も参考になるかかと思います。</p>
+                        <p>今回の記事を作成するにあたり、<a class="url" href="https://qiita.com/chihiro/items/5dd671aa6f1c332986a7">【git】マージしたけどやっぱりやめたい時のやり方4種類</a>を参考にいたしました。
+                        <br>またGitの仕組みについてより詳しく知りたい方はこちらの記事<a class="url" href="https://softwarenote.info/p2113/">Git ワークフロー（ブランチモデル）とその手順</a>も参考になるかかと思います。</p>
                     </section>
                 </div>
             </div>

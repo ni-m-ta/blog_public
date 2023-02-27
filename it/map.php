@@ -16,28 +16,28 @@ include '../templates/head.php';
               <div class="child-container">
                 <div class="recent-blogs">
                   <div class="recent-blog">
-                  <a href="howToUseGit.php">【Git Cheatsheet】業務で活躍Gitコマンド集</a>
+                  <a class="blog" href="howToUseGit.php">【Git Cheatsheet】業務で活躍Gitコマンド集</a>
                   </div>
                   <div class="recent-blog">
-                  <a href="dockerDjangoMysql.php">【Ubuntu-22.04】How to create docker compose to use Django & Mysql</a>
+                  <a class="blog" href="dockerDjangoMysql.php">【Ubuntu-22.04】How to create docker compose to use Django & Mysql</a>
                   </div>
                   <div class="recent-blog">
-                  <a href="dockerGitLocalEnvironment.php">【Ubuntu-22.04】How to use Docker and Git by using Docker Compose</a>
+                  <a class="blog" href="dockerGitLocalEnvironment.php">【Ubuntu-22.04】How to use Docker and Git by using Docker Compose</a>
                   </div>
                   <div class="recent-blog">
-                  <a href="ubuntuBrightness-en.php">【Ubuntu-22.04】How to change brightness ~BrightnessController~</a>
+                  <a class="blog" href="ubuntuBrightness-en.php">【Ubuntu-22.04】How to change brightness ~BrightnessController~</a>
                   </div>
                   <div class="recent-blog">
-                  <a href="ubuntuInstallandSetting.php">【Ubuntu-22.04】OS無しデスクトップ環境構築!</a>
+                  <a class="blog" href="ubuntuInstallandSetting.php">【Ubuntu-22.04】OS無しデスクトップ環境構築!</a>
                   </div>
                   <div class="recent-blog">
-                  <a href="ubuntuPassword.php">【Ubuntu】Ubuntuのパスワード簡単にリセット!</a>
+                  <a class="blog" href="ubuntuPassword.php">【Ubuntu】Ubuntuのパスワード簡単にリセット!</a>
                   </div>
                   <div class="recent-blog">
-                  <a href="ubuntuInstall.php">【Ubuntu】IT初心者がUbuntuインストールしてみた</a>
+                  <a class="blog" href="ubuntuInstall.php">【Ubuntu】IT初心者がUbuntuインストールしてみた</a>
                   </div>
                   <div class="recent-blog">
-                  <a href="ubuntuScrollChrome.php">【Ubuntu20.04】Chromeのスクロールスピード簡単に修正!</a>
+                  <a class="blog" href="ubuntuScrollChrome.php">【Ubuntu20.04】Chromeのスクロールスピード簡単に修正!</a>
                   </div>   
                 </div>        
               </div>

@@ -16,7 +16,7 @@ include '../templates/head.php';
               <div class="child-container">
                 <div class="recent-blogs">
                     <div class="recent-blog">
-                      <a href="xampp.php">【XAMPP】ローカル環境においてブラウザ上でPHPファイルを確認したい</a>
+                      <a class="blog" href="xampp.php">【XAMPP】ローカル環境においてブラウザ上でPHPファイルを確認したい</a>
                     </div>  
                   </div>             
               </div>
