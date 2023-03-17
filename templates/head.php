@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSPKVQ1899"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('../js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TSPKVQ1899"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-TSPKVQ1899');
-</script>
+    gtag('config', 'G-TSPKVQ1899');
+  </script>
   <meta charset="UTF-8">
   <title><?php echo $title; ?></title>
   <meta name="description" content="<?php echo $description; ?>">
